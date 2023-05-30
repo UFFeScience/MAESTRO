@@ -9,6 +9,7 @@ import owlready2
 import xds as xds
 from owlready2 import *
 import subprocess
+import time
 import os, sys, re, shutil as sh, optparse, time, datetime, threading
 import sys, random, string, psutil, subprocess, json
 import getopt
@@ -271,7 +272,7 @@ showExpLine() #está ok
 # createTemplate(ontoexpline, mafft)
 # createTemplate(ontoexpline, mrbayes)
 
-
+inicio = time.time()
 absWf = [aa, aa2, aa3, aa4, aa5]
 x = isValid(ontoexpline, absWf)
 
@@ -283,7 +284,8 @@ print("|*** Executing: ",os.path.basename(__file__),"\n")
 # print("** ",abs_wf)
 
 createProvenanceCalls(ontoexpline, abs_wf, dataflow, [[aa2, clustalw], [aa5, mrbayes]])
-
+fim = time.time()
+print("===> Tempo para derivar e criar chamadas de proveniencia:", fim-inicio)
 # isValid(ontoexpline, [aa, aa2, aa3, aa4, aa5])
 # getAbsWf(ontoexpline, [aa, aa2, aa3, aa4, aa5])
 # getVariabilities(ontoexpline, [aa, aa2, aa3, aa4, aa5])
@@ -326,6 +328,7 @@ createProvenanceCalls(ontoexpline, abs_wf, dataflow, [[aa2, clustalw], [aa5, mrb
 # cleanOntology(ontoexpline)
 # ontoexpline.save(file="ontologies/ontoexpline.owl", format="rdfxml")
 # Abstract_activity and (hasInputRelation some (Relation and composedBy value alignment_att)) and (hasOutputRelation some (Relation and composedBy value atribuxo_x or composedBy value evolutiveModel_att))
+inicio = time.time()
 owlready2.JAVA_EXE = "/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java"
 ontoexpline = get_ontology("ontologies/ontoexpline.owl").load()
 with ontoexpline:
@@ -341,6 +344,8 @@ with ontoexpline:
 # eq = ontoexpline.Abstract_activity()
 eq = ontoexpline.search(type = ontoexpline.Equivalence)
 print(eq)
+fim = time.time()
+print("===> Tempo para calculo da equivalencia:", fim-inicio)
 print(aa4, aa4.is_a)
 
 # find_data_tranformation_telemetry_metrics(26)

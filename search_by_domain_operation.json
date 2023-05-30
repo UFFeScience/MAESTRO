@@ -2,10 +2,10 @@
    "Dataflows": [
       {
          "Domain_operation": "Sequence_alignment_refinament_operation_2089",
-         "Dataflow_execution_id": 4,
+         "Dataflow_id": 4,
          "Attribute:": "model",
          "Value": "JTT",
-         "Dts_execution_id:": [
+         "Data_transformations_execution_id:": [
             [
                14
             ],
