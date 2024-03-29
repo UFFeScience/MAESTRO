@@ -1,0 +1,1194 @@
+% SZS start RequiredInformation
+% Congratulations - you have become a registered power user of SystemOnTPTP, at IP address 45.232.58.59.
+% Please consider donating to the TPTP project - see tptp.org for details.
+% When you donate this message will disappear.
+% If you do not donate a random delay might be added to your processing time.
+% Happy days ... you were not selected for a random delay.
+% SZS end RequiredInformation
+% Checking upload ... % Checker ran ... % No errors ...
+% START OF SYSTEM OUTPUT
+Running first-order theorem proving
+Running: /home/tptp/Systems/Vampire---4.8/vampire_z3_rel_static_master_6827 --mode portfolio --schedule snake_tptp_uns -p tptp --output_axiom_names on -m 16384 --cores 7 -t 60 /tmp/tmp.LyGnFZluMR/Vampire---4.8_96017
+% (96073)Running in auto input_syntax mode. Trying TPTP
+% (96074)dis+1002_1:12_drc=off:fd=preordered:tgt=full:i=99978:si=on:rawr=on:rtra=on_0 on Vampire---4 for (599ds/99978Mi)
+% (96078)lrs+10_1:1024_nm=0:nwc=5.0:ss=axioms:i=13:si=on:rawr=on:rtra=on_0 on Vampire---4 for (599ds/13Mi)
+% (96078)Refutation not found, incomplete strategy% (96078)------------------------------
+% (96078)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96078)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96078)Termination reason: Refutation not found, incomplete strategy
+
+% (96078)Memory used [KB]: 1412
+% (96078)Time elapsed: 0.003 s
+% (96078)Instructions burned: 3 (million)
+% (96078)------------------------------
+% (96078)------------------------------
+% (96075)lrs+10_1:1_gsp=on:sd=1:sgt=32:sos=on:ss=axioms:i=13:si=on:rawr=on:rtra=on_0 on Vampire---4 for (599ds/13Mi)
+% (96079)dis+21_1:1_av=off:sos=on:sp=frequency:ss=included:to=lpo:i=15:si=on:rawr=on:rtra=on_0 on Vampire---4 for (599ds/15Mi)
+% (96075)Refutation not found, incomplete strategy% (96075)------------------------------
+% (96075)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96075)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96075)Termination reason: Refutation not found, incomplete strategy
+
+% (96075)Memory used [KB]: 1412
+% (96075)Time elapsed: 0.003 s
+% (96075)Instructions burned: 3 (million)
+% (96075)------------------------------
+% (96075)------------------------------
+% (96077)lrs+10_5:1_br=off:fde=none:nwc=3.0:sd=1:sgt=10:sos=on:ss=axioms:urr=on:i=51:si=on:rawr=on:rtra=on_0 on Vampire---4 for (599ds/51Mi)
+% (96077)Refutation not found, incomplete strategy% (96077)------------------------------
+% (96077)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96077)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96077)Termination reason: Refutation not found, incomplete strategy
+
+% (96077)Memory used [KB]: 1412
+% (96077)Time elapsed: 0.003 s
+% (96077)Instructions burned: 3 (million)
+% (96077)------------------------------
+% (96077)------------------------------
+% (96079)Refutation not found, incomplete strategy% (96079)------------------------------
+% (96079)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96079)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96079)Termination reason: Refutation not found, incomplete strategy
+
+% (96079)Memory used [KB]: 1707
+% (96079)Time elapsed: 0.007 s
+% (96079)Instructions burned: 10 (million)
+% (96079)------------------------------
+% (96079)------------------------------
+% (96074)Refutation not found, incomplete strategy% (96074)------------------------------
+% (96074)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96074)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96074)Termination reason: Refutation not found, incomplete strategy
+
+% (96074)Memory used [KB]: 1736
+% (96074)Time elapsed: 0.013 s
+% (96074)Instructions burned: 17 (million)
+% (96074)------------------------------
+% (96074)------------------------------
+% (96080)dis+1010_1:50_awrs=decay:awrsf=128:nwc=10.0:s2pl=no:sp=frequency:ss=axioms:i=39:si=on:rawr=on:rtra=on_0 on Vampire---4 for (599ds/39Mi)
+% (96076)dis+1002_1:1_aac=none:bd=off:sac=on:sos=on:spb=units:i=3:si=on:rawr=on:rtra=on_0 on Vampire---4 for (599ds/3Mi)
+% (96076)Instruction limit reached!
+% (96076)------------------------------
+% (96076)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96076)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96076)Termination reason: Unknown
+% (96076)Termination phase: Unused predicate definition removal
+
+% (96076)Memory used [KB]: 1571
+% (96076)Time elapsed: 0.004 s
+% (96076)Instructions burned: 3 (million)
+% (96076)------------------------------
+% (96076)------------------------------
+% (96080)Refutation not found, incomplete strategy% (96080)------------------------------
+% (96080)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96080)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96080)Termination reason: Refutation not found, incomplete strategy
+
+% (96080)Memory used [KB]: 1412
+% (96080)Time elapsed: 0.005 s
+% (96080)Instructions burned: 3 (million)
+% (96080)------------------------------
+% (96080)------------------------------
+% (96082)dis+10_1:1_newcnf=on:sgt=8:sos=on:ss=axioms:to=lpo:urr=on:i=49:si=on:rawr=on:rtra=on_0 on Vampire---4 for (599ds/49Mi)
+% (96082)Refutation not found, incomplete strategy% (96082)------------------------------
+% (96082)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96082)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96082)Termination reason: Refutation not found, incomplete strategy
+
+% (96082)Memory used [KB]: 1412
+% (96082)Time elapsed: 0.002 s
+% (96082)Instructions burned: 2 (million)
+% (96082)------------------------------
+% (96082)------------------------------
+% (96081)lrs+2_1:1_lcm=reverse:lma=on:sos=all:spb=goal_then_units:ss=included:urr=on:i=39:si=on:rawr=on:rtra=on_0 on Vampire---4 for (599ds/39Mi)
+% (96081)Refutation not found, incomplete strategy% (96081)------------------------------
+% (96081)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96081)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96081)Termination reason: Refutation not found, incomplete strategy
+
+% (96081)Memory used [KB]: 1708
+% (96081)Time elapsed: 0.010 s
+% (96081)Instructions burned: 11 (million)
+% (96081)------------------------------
+% (96081)------------------------------
+% (96083)lrs+10_1:1_br=off:sos=on:ss=axioms:st=2.0:urr=on:i=33:si=on:rawr=on:rtra=on_0 on Vampire---4 for (599ds/33Mi)
+% (96085)lrs+10_1:2_br=off:nm=4:ss=included:urr=on:i=7:si=on:rawr=on:rtra=on_0 on Vampire---4 for (599ds/7Mi)
+% (96084)lrs+10_1:1_ep=R:lcm=predicate:lma=on:sos=all:spb=goal:ss=included:i=12:si=on:rawr=on:rtra=on_0 on Vampire---4 for (599ds/12Mi)
+% (96083)Refutation not found, incomplete strategy% (96083)------------------------------
+% (96083)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96083)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96083)Termination reason: Refutation not found, incomplete strategy
+
+% (96083)Memory used [KB]: 1412
+% (96083)Time elapsed: 0.004 s
+% (96083)Instructions burned: 2 (million)
+% (96083)------------------------------
+% (96083)------------------------------
+% (96085)Instruction limit reached!
+% (96085)------------------------------
+% (96085)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96085)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96085)Termination reason: Unknown
+% (96085)Termination phase: Saturation
+
+% (96085)Memory used [KB]: 1662
+% (96085)Time elapsed: 0.006 s
+% (96085)Instructions burned: 7 (million)
+% (96085)------------------------------
+% (96085)------------------------------
+% (96084)Refutation not found, incomplete strategy% (96084)------------------------------
+% (96084)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96084)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96084)Termination reason: Refutation not found, incomplete strategy
+
+% (96084)Memory used [KB]: 1709
+% (96084)Time elapsed: 0.006 s
+% (96084)Instructions burned: 8 (million)
+% (96084)------------------------------
+% (96084)------------------------------
+% (96086)lrs+10_1:4_av=off:bs=unit_only:bsr=unit_only:ep=RS:s2a=on:sos=on:sp=frequency:to=lpo:i=16:si=on:rawr=on:rtra=on_0 on Vampire---4 for (599ds/16Mi)
+% (96087)lrs+10_1:32_br=off:nm=16:sd=2:ss=axioms:st=2.0:urr=on:i=51:si=on:rawr=on:rtra=on_0 on Vampire---4 for (599ds/51Mi)
+% (96086)Refutation not found, incomplete strategy% (96086)------------------------------
+% (96086)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96086)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96086)Termination reason: Refutation not found, incomplete strategy
+
+% (96086)Memory used [KB]: 1708
+% (96086)Time elapsed: 0.006 s
+% (96086)Instructions burned: 8 (million)
+% (96086)------------------------------
+% (96086)------------------------------
+% (96087)Refutation not found, incomplete strategy% (96087)------------------------------
+% (96087)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96087)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96087)Termination reason: Refutation not found, incomplete strategy
+
+% (96087)Memory used [KB]: 1412
+% (96087)Time elapsed: 0.004 s
+% (96087)Instructions burned: 2 (million)
+% (96087)------------------------------
+% (96087)------------------------------
+% (96089)lrs+10_1:1_drc=off:sp=reverse_frequency:spb=goal:to=lpo:i=7:si=on:rawr=on:rtra=on_0 on Vampire---4 for (598ds/7Mi)
+% (96088)lrs+10_1:1_ins=3:sp=reverse_frequency:spb=goal:to=lpo:i=3:si=on:rawr=on:rtra=on_0 on Vampire---4 for (598ds/3Mi)
+% (96089)Instruction limit reached!
+% (96089)------------------------------
+% (96089)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96089)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96089)Termination reason: Unknown
+% (96089)Termination phase: Saturation
+
+% (96089)Memory used [KB]: 1749
+% (96089)Time elapsed: 0.005 s
+% (96089)Instructions burned: 7 (million)
+% (96089)------------------------------
+% (96089)------------------------------
+% (96088)Instruction limit reached!
+% (96088)------------------------------
+% (96088)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96088)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96088)Termination reason: Unknown
+% (96088)Termination phase: Unused predicate definition removal
+
+% (96088)Memory used [KB]: 1587
+% (96088)Time elapsed: 0.004 s
+% (96088)Instructions burned: 4 (million)
+% (96088)------------------------------
+% (96088)------------------------------
+% (96091)fmb+10_1:1_nm=2:i=3:si=on:rawr=on:rtra=on_0 on Vampire---4 for (598ds/3Mi)
+% (96091)Instruction limit reached!
+% (96091)------------------------------
+% (96091)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96091)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96091)Termination reason: Unknown
+% (96091)Termination phase: Unused predicate definition removal
+
+% (96091)Memory used [KB]: 1535
+% (96091)Time elapsed: 0.003 s
+% (96091)Instructions burned: 3 (million)
+% (96091)------------------------------
+% (96091)------------------------------
+% (96090)lrs+1011_1:1_fd=preordered:fsd=on:sos=on:thsq=on:thsqc=64:thsqd=32:uwa=ground:i=50:si=on:rawr=on:rtra=on_0 on Vampire---4 for (598ds/50Mi)
+% (% (96092)Instruction limit reached!
+% (96092)------------------------------
+% (96092)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96092)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96092)Termination reason: Unknown
+% (96092)Termination phase: Unknown
+
+% (96092)Memory used [KB]: 1370
+% (96092)Time elapsed: 0.002 s
+% (96092)Instructions burned: 2 (million)
+% (96090)Refutation not found, incomplete strategy% (96090)------------------------------
+% (96090)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96090)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96090)Termination reason: Refutation not found, incomplete strategy
+
+% (96090)Memory used [KB]: 1761
+% (96090)Time elapsed: 0.007 s
+% (96090)Instructions burned: 9 (million)
+% (96090)------------------------------
+% (96090)------------------------------
+% (96094)dis+1010_1:1_bs=on:ep=RS:erd=off:newcnf=on:nwc=10.0:s2a=on:sgt=32:ss=axioms:i=30:si=on:rawr=on:rtra=on_0 on Vampire---4 for (598ds/30Mi)
+% (96094)Refutation not found, incomplete strategy% (96094)------------------------------
+% (96094)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96094)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96094)Termination reason: Refutation not found, incomplete strategy
+
+% (96094)Memory used [KB]: 1412
+% (96094)Time elapsed: 0.003 s
+% (96094)Instructions burned: 2 (million)
+% (96094)------------------------------
+% (96094)------------------------------
+% (96093)dis-10_3:2_amm=sco:ep=RS:fsr=off:nm=10:sd=2:sos=on:ss=axioms:st=3.0:i=11:si=on:rawr=on:rtra=on_0 on Vampire---4 for (598ds/11Mi)
+% (96093)Refutation not found, incomplete strategy% (96093)------------------------------
+% (96093)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96093)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96093)Termination reason: Refutation not found, incomplete strategy
+
+% (96093)Memory used [KB]: 1412
+% (96093)Time elapsed: 0.003 s
+% (96093)Instructions burned: 3 (million)
+% (96093)------------------------------
+% (96093)------------------------------
+% (96095)ott+21_1:1_erd=off:s2a=on:sac=on:sd=1:sgt=64:sos=on:ss=included:st=3.0:to=lpo:urr=on:i=99:si=on:rawr=on:rtra=on_0 on Vampire---4 for (598ds/99Mi)
+% (96096)dis+1010_2:3_fs=off:fsr=off:nm=0:nwc=5.0:s2a=on:s2agt=32:i=82:si=on:rawr=on:rtra=on_0 on Vampire---4 for (598ds/82Mi)
+% (96097)dis+10_1:1_av=off:sos=on:sp=reverse_arity:ss=included:st=2.0:to=lpo:urr=ec_only:i=45:si=on:rawr=on:rtra=on_0 on Vampire---4 for (598ds/45Mi)
+% (96095)Refutation not found, incomplete strategy% (96095)------------------------------
+% (96095)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96095)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96095)Termination reason: Refutation not found, incomplete strategy
+
+% (96095)Memory used [KB]: 1709
+% (96095)Time elapsed: 0.008 s
+% (96095)Instructions burned: 10 (million)
+% (96095)------------------------------
+% (96095)------------------------------
+% (96097)Refutation not found, incomplete strategy% (96097)------------------------------
+% (96097)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96097)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96097)Termination reason: Refutation not found, incomplete strategy
+
+% (96097)Memory used [KB]: 1708
+% (96097)Time elapsed: 0.007 s
+% (96097)Instructions burned: 9 (million)
+% (96097)------------------------------
+% (96097)------------------------------
+% (96098)dis+21_1:1_ep=RS:nwc=10.0:s2a=on:s2at=1.5:i=50:si=on:rawr=on:rtra=on_0 on Vampire---4 for (598ds/50Mi)
+% (96099)lrs+11_1:1_plsq=on:plsqc=1:plsqr=32,1:ss=included:i=95:si=on:rawr=on:rtra=on_0 on Vampire---4 for (598ds/95Mi)
+% (96100)lrs+1011_1:1_fd=preordered:fsd=on:sos=on:thsq=on:thsqc=64:thsqd=32:uwa=ground:i=99:si=on:rawr=on:rtra=on_0 on Vampire---4 for (597ds/99Mi)
+% (96098)Refutation not found, incomplete strategy% (96098)------------------------------
+% (96098)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96098)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96098)Termination reason: Refutation not found, incomplete strategy
+
+% (96098)Memory used [KB]: 1737
+% (96098)Time elapsed: 0.011 s
+% (96098)Instructions burned: 16 (million)
+% (96098)------------------------------
+% (96098)------------------------------
+% (96100)Refutation not found, incomplete strategy% (96100)------------------------------
+% (96100)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96100)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96100)Termination reason: Refutation not found, incomplete strategy
+
+% (96100)Memory used [KB]: 1759
+% (96100)Time elapsed: 0.008 s
+% (96100)Instructions burned: 8 (million)
+% (96100)------------------------------
+% (96100)------------------------------
+% (96096)Refutation not found, incomplete strategy% (96096)------------------------------
+% (96096)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96096)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96096)Termination reason: Refutation not found, incomplete strategy
+
+% (96096)Memory used [KB]: 1911
+% (96096)Time elapsed: 0.026 s
+% (96096)Instructions burned: 29 (million)
+% (96096)------------------------------
+% (96096)------------------------------
+% (96099)First to succeed.
+% (96101)dis+21_1:1_aac=none:abs=on:er=known:fde=none:fsr=off:nwc=5.0:s2a=on:s2at=4.0:sp=const_frequency:to=lpo:urr=ec_only:i=25:si=on:rawr=on:rtra=on_0 on Vampire---4 for (597ds/25Mi)
+vampire_z3_rel_static_master_6827: malloc.c:2617: sysmalloc: Assertion `(old_top == initial_top (av) && old_size == 0) || ((unsigned long) (old_size) >= MINSIZE && prev_inuse (old_top) && ((unsigned long) old_end & (pagesize - 1)) == 0)' failed.
+96101 Aborted by signal SIGABRT on /tmp/tmp.LyGnFZluMR/Vampire---4.8_96017
+% (96101)------------------------------
+% (96101)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96101)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96101)Termination reason: Unknown
+% (96101)Termination phase: SInE selection
+
+% (96101)Memory used [KB]: 1423
+% (96101)Time elapsed: 0.003 s
+% (96101)Instructions burned: 3 (million)
+% (96101)------------------------------
+% (96101)------------------------------
+Version : Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+???
+ ???
+  ???
+   ???
+    ???
+     ???
+      ???
+       ???
+        ???
+         ???
+          ???
+           ???
+            ???
+             ???
+              ???
+               ???
+                ???
+                 ???
+                  ???
+                   ???
+                    ???
+                     ???
+                      ???
+                       ???
+                        ???
+                         ???
+                          ???
+                           ???
+                            ???
+                             ???
+                              ???
+                               ???
+                                ???
+                                 ???
+                                  ???
+% SZS status Satisfiable for Vampire---4
+% (96099)# SZS output start Saturation.
+cnf(u1644,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree,X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt = X0).
+
+cnf(u1592,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_User(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SUBTREES)).
+
+cnf(u1436,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Domain_Operation(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree)).
+
+cnf(u1642,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program,X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt = X0).
+
+cnf(u1509,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt)).
+
+cnf(u1246,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_composedBy(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_SUBTREES,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SUBTREES)).
+
+cnf(u1228,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Bio(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Domain_Operation(X0)).
+
+cnf(u1117,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Attribute(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SUBTREES)).
+
+cnf(u1194,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_consumedBy(X0,X1) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1091,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Phylogenetic_tree_generation_operation_0547(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW)).
+
+cnf(u1421,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Bio(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen)).
+
+cnf(u1131,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_INPUT_SEQUENCE,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_full_dataset_plasmodium)).
+
+cnf(u1652,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(X0) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity(X0)).
+
+cnf(u1281,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_composedBy(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SEQUENCES_OUTPUT_FORMAT)).
+
+cnf(u1282,axiom,
+    http___www_w3_org_2002_07_owl_Thing(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN)).
+
+cnf(u1254,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInPort(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_nexus)).
+
+cnf(u1125,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_implements(X0,X1) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program(X0)).
+
+cnf(u1356,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_generatedBy(X0,X1) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1311,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasId(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW,'1')).
+
+cnf(u1429,axiom,
+    ~http___www_w3_org_2002_07_owl_Thing(sK2)).
+
+cnf(u1304,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_nexus,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SEQUENCES_OUTPUT_FORMAT)).
+
+cnf(u1255,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutputRelation(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_SUBTREES)).
+
+cnf(u1114,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Metadata(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1443,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Experiment_Line(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt)).
+
+cnf(u1470,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt)).
+
+cnf(u1289,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Experiment_Line(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(X0)).
+
+cnf(u1482,axiom,
+    http___www_w3_org_2002_07_owl_Thing(sK0(X0)) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity(X0)).
+
+cnf(u1329,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1319,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Attribute(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1330,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMetadata(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13___act)).
+
+cnf(u1263,axiom,
+    http___www_w3_org_2002_07_owl_Thing(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN)).
+
+cnf(u1156,axiom,
+    http___www_w3_org_2002_07_owl_Thing(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SUBTREES)).
+
+cnf(u1122,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_nexus)).
+
+cnf(u1404,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(X0)).
+
+cnf(u1214,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_implements(X1,X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1349,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1175,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_A_Type(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(X0)).
+
+cnf(u1196,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Configuration_Parameter(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Metadata(X0)).
+
+cnf(u1085,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasRetrospectiveCall(X1,X0) | http___www_w3_org_2002_07_owl_Thing(X1)).
+
+cnf(u1489,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program)).
+
+cnf(u1472,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN)).
+
+cnf(u1337,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Metadata(X0) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Url(X0)).
+
+cnf(u1599,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_User(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_TREE_OUTPUT)).
+
+cnf(u1153,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_executedBy(X0,X1) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1641,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasId(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW,X0) | '1' = X0).
+
+cnf(u1605,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SEQUENCES_OUTPUT_FORMAT)).
+
+cnf(u1403,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(X0)).
+
+cnf(u1302,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1284,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_executedBy(X1,X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1219,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Phylogenetic_tree_generation_operation_0547(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree)).
+
+cnf(u1094,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Mandatory(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree)).
+
+cnf(u1183,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(X0) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program(X0)).
+
+cnf(u1582,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_SUBTREES)).
+
+cnf(u1324,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith(X1,X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution(X1)).
+
+cnf(u1487,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN)).
+
+cnf(u1216,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_consumedBy(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree)).
+
+cnf(u1593,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_User(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_full_dataset_plasmodium)).
+
+cnf(u1095,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SUBTREES,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_SUBTREES)).
+
+cnf(u1116,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInputRelation(X1,X0) | http___www_w3_org_2002_07_owl_Thing(X1)).
+
+cnf(u1643,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW,X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt = X0).
+
+cnf(u1410,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_A_Type(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen)).
+
+cnf(u1309,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(X0)).
+
+cnf(u1640,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasId(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program,X0) | '2' = X0).
+
+cnf(u1310,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Experiment_Line(X0) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Relation(X0)).
+
+cnf(u1613,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE)).
+
+cnf(u1227,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMetadata(X1,X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1201,axiom,
+    http___www_w3_org_2002_07_owl_Thing(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13___act)).
+
+cnf(u1323,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_full_dataset_plasmodium,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_INPUT_SEQUENCE)).
+
+cnf(u1242,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Collection(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1267,axiom,
+    http___www_w3_org_2000_01_rdf_schema_Literal(sK2)).
+
+cnf(u1113,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_A_Type(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1142,axiom,
+    ~http___www_w3_org_2002_07_owl_topObjectProperty(X0,X1) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1344,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Phylogenetic_tree_generation_operation_0547(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Bio(X0)).
+
+cnf(u1179,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_composedBy(X0,X1) | http___www_w3_org_2002_07_owl_Thing(X1)).
+
+cnf(u1264,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInPort(X0,X1) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program(X0)).
+
+cnf(u1317,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasId(X0,X1) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1143,axiom,
+    ~http___www_w3_org_2002_07_owl_topObjectProperty(X0,X1) | http___www_w3_org_2002_07_owl_Thing(X1)).
+
+cnf(u1457,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Collection(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN)).
+
+cnf(u1458,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Collection(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_SUBTREES)).
+
+cnf(u1076,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInPort(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_full_dataset_plasmodium)).
+
+cnf(u1331,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Relation(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_SUBTREES)).
+
+cnf(u1173,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Activity_Type(X0) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Mandatory(X0)).
+
+cnf(u1250,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt)).
+
+cnf(u1661,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Relation(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(X0)).
+
+cnf(u1352,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_implements(X1,X0) | http___www_w3_org_2002_07_owl_Thing(X1)).
+
+cnf(u1162,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Metadata(sK0(X0)) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity(X0)).
+
+cnf(u1187,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasRetrospectiveCall(X1,X0) | http___www_w3_org_2000_01_rdf_schema_Literal(X0)).
+
+cnf(u1650,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(X0) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Phylogenetic_tree_generation_operation_0547(X0)).
+
+cnf(u1491,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW)).
+
+cnf(u1184,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Activity_Domain_Type(X0) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Phylogenetic_tree_generation_operation_0547(X0)).
+
+cnf(u1073,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Domain_Operation(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1531,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN)).
+
+cnf(u1084,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMetadata(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_constructor2_py)).
+
+cnf(u1430,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program)).
+
+cnf(u1681,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Phylogenetic_tree_generation_operation_0547(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(X0)).
+
+cnf(u1093,axiom,
+    http___www_w3_org_2002_07_owl_Thing(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_TREE_OUTPUT)).
+
+cnf(u1170,axiom,
+    http___www_w3_org_2002_07_owl_topObjectProperty(X1,X0) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInputRelation(X1,X0)).
+
+cnf(u1290,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1400,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_A_Type(X0) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Mandatory(X0)).
+
+cnf(u1244,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith(X0,X1) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1133,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMetadata(X1,X0) | http___www_w3_org_2002_07_owl_Thing(X1)).
+
+cnf(u1107,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Activity_Domain_Type(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1192,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_implements(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen)).
+
+cnf(u1607,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SUBTREES)).
+
+cnf(u1312,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(X0)).
+
+cnf(u1411,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen)).
+
+cnf(u1147,axiom,
+    http___www_w3_org_2002_07_owl_Thing(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SEQUENCES_OUTPUT_FORMAT)).
+
+cnf(u1104,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Experiment_Line(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1350,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInputRelation(X1,X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity(X1)).
+
+cnf(u1297,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_User(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(X0)).
+
+cnf(u1460,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Collection(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN)).
+
+cnf(u1287,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Activity_Type(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1298,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Activity_Type(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_A_Type(X0)).
+
+cnf(u1270,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_generatedBy(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_SUBTREES,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree)).
+
+cnf(u1601,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_INPUT_SEQUENCE)).
+
+cnf(u1141,axiom,
+    http___www_w3_org_2002_07_owl_Thing(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree)).
+
+cnf(u1271,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInputRelation(X1,X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Relation(X0)).
+
+cnf(u1338,axiom,
+    http___www_w3_org_2002_07_owl_Thing(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE)).
+
+cnf(u1182,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Configuration_Parameter(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1320,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_First(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_A_Type(X0)).
+
+cnf(u1164,axiom,
+    http___www_w3_org_2002_07_owl_Thing(sK1)).
+
+cnf(u1130,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Attribute(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_TREE_OUTPUT)).
+
+cnf(u1603,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_nexus)).
+
+cnf(u1249,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInPort(X1,X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port(X0)).
+
+cnf(u1588,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_full_dataset_plasmodium)).
+
+cnf(u1609,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_TREE_OUTPUT)).
+
+cnf(u1550,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW)).
+
+cnf(u1335,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Workflow(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1161,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMetadata(X0,sK0(X0)) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity(X0)).
+
+cnf(u1190,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Activity_Domain_Type(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_A_Type(X0)).
+
+cnf(u1279,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Collection(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(X0)).
+
+cnf(u1172,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_composedBy(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_TREE_OUTPUT)).
+
+cnf(u1292,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program(X0) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Workflow(X0)).
+
+cnf(u1191,axiom,
+    http___www_w3_org_2000_01_rdf_schema_Literal(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1102,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_User(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1365,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_implements(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree)).
+
+cnf(u1561,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree)).
+
+cnf(u1212,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutPort(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_SUBTREES)).
+
+cnf(u1611,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_full_dataset_plasmodium)).
+
+cnf(u1075,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInputRelation(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN)).
+
+cnf(u1405,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(X0) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Metadata(X0)).
+
+cnf(u1124,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Workflow(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt)).
+
+cnf(u1418,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Bio(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program)).
+
+cnf(u1169,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Url(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_sources_NMFSt_code_sub_find_py)).
+
+cnf(u1657,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Attribute(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(X0)).
+
+cnf(u1291,axiom,
+    http___www_w3_org_2000_01_rdf_schema_Literal(true)).
+
+cnf(u1261,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_TREE_OUTPUT)).
+
+cnf(u1235,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Relation(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1598,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_User(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_INPUT_SEQUENCE)).
+
+cnf(u1209,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_consumedBy(X1,X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1110,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Phylogenetic_tree_generation_operation_0547(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1199,axiom,
+    http___www_w3_org_2002_07_owl_Thing(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_nexus)).
+
+cnf(u1092,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_full_dataset_plasmodium)).
+
+cnf(u1340,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutputRelation(X0,X1) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1232,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutputRelation(X1,X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1659,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Mandatory(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(X0)).
+
+cnf(u1150,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Configuration_Parameter(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13___act)).
+
+cnf(u1111,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_First(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1132,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Domain_Operation(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(X0)).
+
+cnf(u1478,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_SUBTREES)).
+
+cnf(u1080,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_generatedBy(X0,X1) | http___www_w3_org_2002_07_owl_Thing(X1)).
+
+cnf(u1415,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen)).
+
+cnf(u1426,axiom,
+    ~http___www_w3_org_2002_07_owl_Thing(true)).
+
+cnf(u1325,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMetadata(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13___act)).
+
+cnf(u1299,axiom,
+    http___www_w3_org_2000_01_rdf_schema_Literal('2')).
+
+cnf(u1269,axiom,
+    http___www_w3_org_2002_07_owl_Thing(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_constructor2_py)).
+
+cnf(u1218,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo(X0,X1) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1258,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(X0) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port(X0)).
+
+cnf(u1155,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutPort(X1,X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port(X0)).
+
+cnf(u1240,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt)).
+
+cnf(u1129,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_composedBy(X0,X1) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Collection(X0)).
+
+cnf(u1119,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasId(X1,X0) | http___www_w3_org_2000_01_rdf_schema_Literal(X0)).
+
+cnf(u1360,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program)).
+
+cnf(u1195,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInputRelation(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN)).
+
+cnf(u1152,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt)).
+
+cnf(u1070,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInPort(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE)).
+
+cnf(u1333,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Relation(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN)).
+
+cnf(u1345,axiom,
+    http___www_w3_org_2002_07_owl_Thing(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program)).
+
+cnf(u1346,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW)).
+
+cnf(u1189,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Experiment_Line(X0) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Attribute(X0)).
+
+cnf(u1266,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Url(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_constructor2_py)).
+
+cnf(u1420,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Bio(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree)).
+
+cnf(u1493,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree)).
+
+cnf(u1589,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE)).
+
+cnf(u1203,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Experiment_Line(X0) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity(X0)).
+
+cnf(u1160,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SEQUENCES_OUTPUT_FORMAT,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_nexus)).
+
+cnf(u1533,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_SUBTREES)).
+
+cnf(u1280,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutPort(X0,X1) | http___www_w3_org_2002_07_owl_Thing(X1)).
+
+cnf(u1353,axiom,
+    ~http___www_w3_org_2000_01_rdf_schema_Literal(X0) | ~http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1200,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Relation(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN)).
+
+cnf(u1079,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Attribute(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_INPUT_SEQUENCE)).
+
+cnf(u1419,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Bio(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW)).
+
+cnf(u1446,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Domain_Operation(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen)).
+
+cnf(u1584,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_nexus)).
+
+cnf(u1428,axiom,
+    ~http___www_w3_org_2002_07_owl_Thing('1')).
+
+cnf(u1383,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_A_Type(X0) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Phylogenetic_tree_generation_operation_0547(X0)).
+
+cnf(u1394,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(X0) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity(X0)).
+
+cnf(u1220,axiom,
+    http___www_w3_org_2000_01_rdf_schema_Literal('1')).
+
+cnf(u1109,axiom,
+    http___www_w3_org_2002_07_owl_Thing(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_SUBTREES)).
+
+cnf(u1597,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_User(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE)).
+
+cnf(u1295,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo(X0,X1) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo(X0,X2) | X1 = X2).
+
+cnf(u1288,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_executedBy(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program)).
+
+cnf(u1149,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasRetrospectiveCall(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program,true)).
+
+cnf(u1586,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SUBTREES)).
+
+cnf(u1328,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutputRelation(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN)).
+
+cnf(u1087,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_generatedBy(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen)).
+
+cnf(u1427,axiom,
+    ~http___www_w3_org_2002_07_owl_Thing('2')).
+
+cnf(u1401,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(X0) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Relation(X0)).
+
+cnf(u1120,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Bio(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1217,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1596,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_User(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_SUBTREES)).
+
+cnf(u1314,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInPort(X1,X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1348,axiom,
+    http___www_w3_org_2002_07_owl_Thing(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW)).
+
+cnf(u1303,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_implements(X1,X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity(X0)).
+
+cnf(u1257,axiom,
+    http___www_w3_org_2002_07_owl_Thing(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen)).
+
+cnf(u1158,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Phylogenetic_tree_generation_operation_0547(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program)).
+
+cnf(u1247,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE)).
+
+cnf(u1106,axiom,
+    http___www_w3_org_2002_07_owl_Thing(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_full_dataset_plasmodium)).
+
+cnf(u1594,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_User(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SEQUENCES_OUTPUT_FORMAT)).
+
+cnf(u1343,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_SUBTREES,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SUBTREES)).
+
+cnf(u1336,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith(X1,X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_User(X0)).
+
+cnf(u1198,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasId(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program,'2')).
+
+cnf(u1159,axiom,
+    http___www_w3_org_2002_07_owl_Thing(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_sources_NMFSt_code_sub_find_py)).
+
+cnf(u1180,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_SUBTREES)).
+
+cnf(u1069,axiom,
+    http___www_w3_org_2002_07_owl_Thing(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_INPUT_SEQUENCE)).
+
+cnf(u1543,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN)).
+
+cnf(u1347,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt)).
+
+cnf(u1583,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_INPUT_SEQUENCE)).
+
+cnf(u1177,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(X0) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Metadata(X0)).
+
+cnf(u1206,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Phylogenetic_tree_generation_operation_0547(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen)).
+
+cnf(u1167,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen)).
+
+cnf(u1188,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Metadata(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13___act)).
+
+cnf(u1077,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1207,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_executedBy(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW)).
+
+cnf(u1100,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo(X0,X1) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Experiment_Line(X1)).
+
+cnf(u1591,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_SUBTREES)).
+
+cnf(u1293,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutPort(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE)).
+
+cnf(u1395,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity(X0) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Attribute(X0)).
+
+cnf(u1237,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith(X1,X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1294,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_composedBy(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_INPUT_SEQUENCE)).
+
+cnf(u1434,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Domain_Operation(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW)).
+
+cnf(u1545,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program)).
+
+cnf(u1307,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInPort(X0,X1) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1334,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_TREE_OUTPUT,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE)).
+
+cnf(u1277,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Attribute(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SEQUENCES_OUTPUT_FORMAT)).
+
+cnf(u1251,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInputRelation(X1,X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1316,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_First(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen)).
+
+cnf(u1215,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasId(X0,X2) | ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasId(X0,X1) | X1 = X2).
+
+cnf(u1126,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Mandatory(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1585,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SEQUENCES_OUTPUT_FORMAT)).
+
+cnf(u1108,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutPort(X1,X0) | http___www_w3_org_2002_07_owl_Thing(X1)).
+
+cnf(u1074,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo(X1,X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity(X1)).
+
+cnf(u1163,axiom,
+    http___www_w3_org_2002_07_owl_Thing(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt)).
+
+cnf(u1248,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Mandatory(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen)).
+
+cnf(u1301,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_composedBy(X1,X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Attribute(X0)).
+
+cnf(u1148,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Url(X0) | http___www_w3_org_2002_07_owl_Thing(X0)).
+
+cnf(u1431,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW)).
+
+cnf(u1587,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_TREE_OUTPUT)).
+
+cnf(u1341,axiom,
+    http___www_w3_org_2002_07_owl_Thing(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_SUBTREES)).
+
+cnf(u1424,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Domain_Operation(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program)).
+
+cnf(u1157,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutputRelation(X1,X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity(X1)).
+
+cnf(u1342,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasRetrospectiveCall(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW,true)).
+
+cnf(u1645,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen,X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt = X0).
+
+cnf(u1171,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree)).
+
+cnf(u1671,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Workflow(X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne(X0)).
+
+cnf(u1145,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMetadata(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_sources_NMFSt_code_sub_find_py)).
+
+cnf(u1135,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo(X0,X1) | http___www_w3_org_2002_07_owl_Thing(X1)).
+
+cnf(u1211,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutPort(X1,X0) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program(X1)).
+
+cnf(u1168,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_composedBy(X1,X0) | http___www_w3_org_2002_07_owl_Thing(X1)).
+
+cnf(u1595,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_User(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_nexus)).
+
+cnf(u1361,axiom,
+    http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_consumedBy(http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN,http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen)).
+
+cnf(u1351,axiom,
+    ~http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutputRelation(X0,X1) | http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Relation(X1)).
+
+% (96099)# SZS output end Saturation.
+% (96099)------------------------------
+% (96099)Version: Vampire 4.8 (commit 4017145ee on 2023-10-05 17:46:18 +0200)
+% (96099)Linked with Z3 4.12.2.0 e417f7d78509b2d0c9ebc911fee7632e6ef546b6 z3-4.8.4-7517-ge417f7d78
+% (96099)Termination reason: Satisfiable
+
+% (96099)Memory used [KB]: 1744
+% (96099)Time elapsed: 0.015 s
+% (96099)Instructions burned: 17 (million)
+% (96099)------------------------------
+% (96099)------------------------------
+% (96073)Success in time 0.249 s
+% Vampire---4.8 exiting
+
+% END OF SYSTEM OUTPUT
+% RESULT: SOT_V71159 - Vampire---4.8 says Satisfiable - CPU = 0.71 WC = 1.10 
+% OUTPUT: SOT_V71159 - Vampire---4.8 says Saturation - CPU = 0.71 WC = 1.11 

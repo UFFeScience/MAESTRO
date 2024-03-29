@@ -1,0 +1,1028 @@
+% background axiom: domain consists of objects and data
+fof(axiom0,axiom,(![X]:('http___www_w3_org_2002_07_owl_Thing'(X)|'http___www_w3_org_2000_01_rdf_schema_Literal'(X)))).
+% background axiom: object domain and data domain are disjoint
+fof(axiom1,axiom,(![X]:('http___www_w3_org_2002_07_owl_Thing'(X)=>~'http___www_w3_org_2000_01_rdf_schema_Literal'(X)))).
+% background axiom: there are things
+fof(axiom2,axiom,(?[X]:'http___www_w3_org_2002_07_owl_Thing'(X))).
+% background axiom: there are literals
+fof(axiom3,axiom,(?[X]:'http___www_w3_org_2000_01_rdf_schema_Literal'(X))).
+% facets can only be applied to literals
+fof(axiom4,axiom,(![X,Y]:('http___www_w3_org_2001_XMLSchema_minExclusive'(X,Y)=>('http___www_w3_org_2000_01_rdf_schema_Literal'(X)&'http___www_w3_org_2000_01_rdf_schema_Literal'(Y))))).
+% facets can only be applied to literals
+fof(axiom5,axiom,(![X,Y]:('http___www_w3_org_2001_XMLSchema_fractionDigits'(X,Y)=>('http___www_w3_org_2000_01_rdf_schema_Literal'(X)&'http___www_w3_org_2000_01_rdf_schema_Literal'(Y))))).
+% facets can only be applied to literals
+fof(axiom6,axiom,(![X,Y]:('http___www_w3_org_2001_XMLSchema_pattern'(X,Y)=>('http___www_w3_org_2000_01_rdf_schema_Literal'(X)&'http___www_w3_org_2000_01_rdf_schema_Literal'(Y))))).
+% facets can only be applied to literals
+fof(axiom7,axiom,(![X,Y]:('http___www_w3_org_2001_XMLSchema_minLength'(X,Y)=>('http___www_w3_org_2000_01_rdf_schema_Literal'(X)&'http___www_w3_org_2000_01_rdf_schema_Literal'(Y))))).
+% facets can only be applied to literals
+fof(axiom8,axiom,(![X,Y]:('http___www_w3_org_2001_XMLSchema_minInclusive'(X,Y)=>('http___www_w3_org_2000_01_rdf_schema_Literal'(X)&'http___www_w3_org_2000_01_rdf_schema_Literal'(Y))))).
+% facets can only be applied to literals
+fof(axiom9,axiom,(![X,Y]:('http___www_w3_org_2001_XMLSchema_totalDigits'(X,Y)=>('http___www_w3_org_2000_01_rdf_schema_Literal'(X)&'http___www_w3_org_2000_01_rdf_schema_Literal'(Y))))).
+% facets can only be applied to literals
+fof(axiom10,axiom,(![X,Y]:('http___www_w3_org_2001_XMLSchema_length'(X,Y)=>('http___www_w3_org_2000_01_rdf_schema_Literal'(X)&'http___www_w3_org_2000_01_rdf_schema_Literal'(Y))))).
+% facets can only be applied to literals
+fof(axiom11,axiom,(![X,Y]:('http___www_w3_org_2001_XMLSchema_maxExclusive'(X,Y)=>('http___www_w3_org_2000_01_rdf_schema_Literal'(X)&'http___www_w3_org_2000_01_rdf_schema_Literal'(Y))))).
+% facets can only be applied to literals
+fof(axiom12,axiom,(![X,Y]:('http___www_w3_org_2001_XMLSchema_maxLength'(X,Y)=>('http___www_w3_org_2000_01_rdf_schema_Literal'(X)&'http___www_w3_org_2000_01_rdf_schema_Literal'(Y))))).
+% facets can only be applied to literals
+fof(axiom13,axiom,(![X,Y]:('http___www_w3_org_1999_02_22_rdf_syntax_ns_langRange'(X,Y)=>('http___www_w3_org_2000_01_rdf_schema_Literal'(X)&'http___www_w3_org_2000_01_rdf_schema_Literal'(Y))))).
+% facets can only be applied to literals
+fof(axiom14,axiom,(![X,Y]:('http___www_w3_org_2001_XMLSchema_maxInclusive'(X,Y)=>('http___www_w3_org_2000_01_rdf_schema_Literal'(X)&'http___www_w3_org_2000_01_rdf_schema_Literal'(Y))))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#belongsTo> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Abstract_activity>)
+fof(axiom15,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity'(X0)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadEntity> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Generation>)
+fof(axiom16,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadEntity'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Generation'(X0)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInputChannel> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Channel>)
+fof(axiom17,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInputChannel'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Channel'(X0)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Execution>))
+fof(axiom18,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Url> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#sources/NMFSt/code/sub_find.py>)
+fof(axiom19,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Url'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_sources_NMFSt_code_sub_find_py'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Url> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#sources/NMFSt/code/sub_find.py>)
+fof(axiom20,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_sources_NMFSt_code_sub_find_py'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_SUBTREES>)
+fof(axiom21,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutPort'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_SUBTREES'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_SUBTREES>)
+fof(axiom22,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_SUBTREES>)
+fof(axiom23,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_SUBTREES'))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Metadata>))
+fof(axiom24,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Metadata'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Recomended>))
+fof(axiom25,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Recomended'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasInformedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Execution>)
+fof(axiom26,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasInformedBy'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution'(X1)))).
+% Declaration(NamedIndividual(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_INPUT_SEQUENCE>))
+fof(axiom27,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_INPUT_SEQUENCE'))).
+% FunctionalDataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#timeAverage>)
+fof(axiom28,axiom,(![X0,X1,X2]:(('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_timeAverage'(X0,X1)&'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_timeAverage'(X0,X2))=>(X1=X2)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Sequencing_quality_control>))
+fof(axiom29,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Sequencing_quality_control'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ProvOne>))
+fof(axiom30,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Configuration_Parameter>))
+fof(axiom31,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Configuration_Parameter'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadOutPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Port>)
+fof(axiom32,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadOutPort'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port'(X1)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#belongsTo> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#NMFSt>)
+fof(axiom33,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#belongsTo> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#NMFSt>)
+fof(axiom34,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#belongsTo> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#NMFSt>)
+fof(axiom35,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt'))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Sequence_alignment_refinament_operation_2089> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Bio>)
+fof(axiom36,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Sequence_alignment_refinament_operation_2089'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Bio'(X0)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Workflow> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#NMFSt>)
+fof(axiom37,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Workflow'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Workflow> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#NMFSt>)
+fof(axiom38,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Port> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_SUBTREES>)
+fof(axiom39,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_SUBTREES'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Port> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_SUBTREES>)
+fof(axiom40,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_SUBTREES'))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#controlledBy>))
+fof(axiom41,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_controlledBy'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#controlledBy>))
+fof(axiom42,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_controlledBy'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#composedBy>))
+fof(axiom43,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_composedBy'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#composedBy>))
+fof(axiom44,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_composedBy'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#nexus> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SEQUENCES_OUTPUT_FORMAT>)
+fof(axiom45,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_nexus','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SEQUENCES_OUTPUT_FORMAT'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#nexus> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SEQUENCES_OUTPUT_FORMAT>)
+fof(axiom46,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_nexus'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#nexus> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SEQUENCES_OUTPUT_FORMAT>)
+fof(axiom47,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SEQUENCES_OUTPUT_FORMAT'))).
+% Declaration(NamedIndividual(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#nexus>))
+fof(axiom48,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_nexus'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Relation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_TREE_GEN>)
+fof(axiom49,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Relation'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Relation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_TREE_GEN>)
+fof(axiom50,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN'))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#used> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Execution>)
+fof(axiom51,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_used'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution'(X0)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#implements>))
+fof(axiom52,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_implements'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#implements>))
+fof(axiom53,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_implements'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Attribute> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SUBTREES>)
+fof(axiom54,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Attribute'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SUBTREES'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Attribute> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SUBTREES>)
+fof(axiom55,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SUBTREES'))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadMember>))
+fof(axiom56,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadMember'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadMember>))
+fof(axiom57,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadMember'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Phylogenetic_tree_generation_operation_0547> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW>)
+fof(axiom58,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Phylogenetic_tree_generation_operation_0547'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Phylogenetic_tree_generation_operation_0547> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW>)
+fof(axiom59,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW'))).
+% Declaration(NamedIndividual(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#NMFSt>))
+fof(axiom60,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt'))).
+% DataPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#invalidatedAtTime> owl:Thing)
+fof(axiom61,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_invalidatedAtTime'(X0,X1)=>'http___www_w3_org_2002_07_owl_Thing'(X0)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Abstract_activity> ObjectSomeValuesFrom(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMetadata> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Metadata>))
+fof(axiom62,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity'(X0)=>?[X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMetadata'(X0,X1)&'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Metadata'(X1))))).
+% FunctionalDataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMinExecutionTime>)
+fof(axiom63,axiom,(![X0,X1,X2]:(('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMinExecutionTime'(X0,X1)&'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMinExecutionTime'(X0,X2))=>(X1=X2)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadPlan> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Program>)
+fof(axiom64,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadPlan'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program'(X1)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#connectsTo> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Channel>)
+fof(axiom65,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_connectsTo'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Channel'(X1)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasGeneratedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>)
+fof(axiom66,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasGeneratedBy'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X0)))).
+% Declaration(NamedIndividual(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_TREE_OUTPUT>))
+fof(axiom67,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_TREE_OUTPUT'))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Relation>))
+fof(axiom68,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Relation'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Generation>))
+fof(axiom69,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Generation'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#belongsTo> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#NMFSt>)
+fof(axiom70,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#belongsTo> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#NMFSt>)
+fof(axiom71,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#belongsTo> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#NMFSt>)
+fof(axiom72,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#composedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_INPUT_TREE_GEN> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_INPUT_SEQUENCE>)
+fof(axiom73,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_composedBy'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_INPUT_SEQUENCE'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#composedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_INPUT_TREE_GEN> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_INPUT_SEQUENCE>)
+fof(axiom74,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#composedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_INPUT_TREE_GEN> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_INPUT_SEQUENCE>)
+fof(axiom75,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_INPUT_SEQUENCE'))).
+% Declaration(NamedIndividual(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#--act>))
+fof(axiom76,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13___act'))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#diskWriteBytesAverage>))
+fof(axiom77,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_diskWriteBytesAverage'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#diskWriteBytesAverage>))
+fof(axiom78,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_diskWriteBytesAverage'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutputChannel> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Abstract_activity>)
+fof(axiom79,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutputChannel'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity'(X0)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#startedAtTime>))
+fof(axiom80,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_startedAtTime'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#startedAtTime>))
+fof(axiom81,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_startedAtTime'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_SUBTREES> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SUBTREES>)
+fof(axiom82,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_SUBTREES','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SUBTREES'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_SUBTREES> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SUBTREES>)
+fof(axiom83,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_SUBTREES'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_SUBTREES> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SUBTREES>)
+fof(axiom84,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SUBTREES'))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasId>))
+fof(axiom85,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasId'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasId>))
+fof(axiom86,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasId'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#executedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW>)
+fof(axiom87,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_executedBy'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#executedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW>)
+fof(axiom88,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#executedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW>)
+fof(axiom89,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW'))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Sequence_alignment_operation_0292>))
+fof(axiom90,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Sequence_alignment_operation_0292'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasSubProgram> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Program>)
+fof(axiom91,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasSubProgram'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program'(X0)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#controlledBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Program>)
+fof(axiom92,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_controlledBy'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program'(X0)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#qualifiedGeneration> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Generation>)
+fof(axiom93,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_qualifiedGeneration'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Generation'(X1)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Document>))
+fof(axiom94,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Document'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Workflow> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Program>)
+fof(axiom95,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Workflow'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program'(X0)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#connectsTo> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Port>)
+fof(axiom96,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_connectsTo'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port'(X0)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutputRelation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Abstract_activity>)
+fof(axiom97,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutputRelation'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity'(X0)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#agent>))
+fof(axiom98,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_agent'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#agent>))
+fof(axiom99,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_agent'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Attribute> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_TREE_OUTPUT>)
+fof(axiom100,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Attribute'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_TREE_OUTPUT'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Attribute> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_TREE_OUTPUT>)
+fof(axiom101,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_TREE_OUTPUT'))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#belongsTo> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Experiment_Line>)
+fof(axiom102,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Experiment_Line'(X1)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMetadata> owl:Thing)
+fof(axiom103,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMetadata'(X0,X1)=>'http___www_w3_org_2002_07_owl_Thing'(X0)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInPort>))
+fof(axiom104,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInPort'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInPort>))
+fof(axiom105,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInPort'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Channel>))
+fof(axiom106,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Channel'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#totalExecutionTime>))
+fof(axiom107,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_totalExecutionTime'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#totalExecutionTime>))
+fof(axiom108,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_totalExecutionTime'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasDerivedFrom> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Program>)
+fof(axiom109,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasDerivedFrom'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program'(X1)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasSubProgram>))
+fof(axiom110,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasSubProgram'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasSubProgram>))
+fof(axiom111,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasSubProgram'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Visualization>))
+fof(axiom112,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Visualization'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutputRelation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Relation>)
+fof(axiom113,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutputRelation'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Relation'(X1)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Sequence_alignment_conversion_operation_0260>))
+fof(axiom114,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Sequence_alignment_conversion_operation_0260'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Sequence_alignment_conversion_operation_0260> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Activity_Domain_Type>)
+fof(axiom115,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Sequence_alignment_conversion_operation_0260'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Activity_Domain_Type'(X0)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Generation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ProvOne>)
+fof(axiom116,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Generation'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne'(X0)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Recomended> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>)
+fof(axiom117,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Recomended'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X0)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program>)
+fof(axiom118,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program>)
+fof(axiom119,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program'))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Url>))
+fof(axiom120,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Url'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadMember> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>)
+fof(axiom121,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadMember'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X1)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMinExecutionTime>))
+fof(axiom122,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMinExecutionTime'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMinExecutionTime>))
+fof(axiom123,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMinExecutionTime'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Sequence_alignment_operation_0292> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Activity_Domain_Type>)
+fof(axiom124,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Sequence_alignment_operation_0292'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Activity_Domain_Type'(X0)))).
+% Declaration(NamedIndividual(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#constructor2.py>))
+fof(axiom125,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_constructor2_py'))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#executedBy>))
+fof(axiom126,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_executedBy'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#executedBy>))
+fof(axiom127,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_executedBy'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutputRelation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_TREE_GEN>)
+fof(axiom128,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutputRelation'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutputRelation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_TREE_GEN>)
+fof(axiom129,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutputRelation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_TREE_GEN>)
+fof(axiom130,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN'))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Port>)
+fof(axiom131,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutPort'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port'(X1)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasDefaultParam>))
+fof(axiom132,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasDefaultParam'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasDefaultParam>))
+fof(axiom133,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasDefaultParam'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#controls>))
+fof(axiom134,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_controls'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#controls>))
+fof(axiom135,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_controls'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Abstract_activity>))
+fof(axiom136,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% DataPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#value> xsd:string)
+fof(axiom137,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_value'(X0,X1)=>'http___www_w3_org_2001_XMLSchema_string'(X1)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#agent> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#User>)
+fof(axiom138,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_agent'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_User'(X1)))).
+% Declaration(NamedIndividual(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#full_dataset_plasmodium>))
+fof(axiom139,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_full_dataset_plasmodium'))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Mandatory>))
+fof(axiom140,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Mandatory'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Activity_Domain_Type>))
+fof(axiom141,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Activity_Domain_Type'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#qualifiedGeneration> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Execution>)
+fof(axiom142,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_qualifiedGeneration'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution'(X0)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#diskReadBytesAverage>))
+fof(axiom143,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_diskReadBytesAverage'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#diskReadBytesAverage>))
+fof(axiom144,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_diskReadBytesAverage'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_TREE_OUTPUT> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_TREE>)
+fof(axiom145,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_TREE_OUTPUT','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_TREE_OUTPUT> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_TREE>)
+fof(axiom146,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_TREE_OUTPUT'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_TREE_OUTPUT> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_TREE>)
+fof(axiom147,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Abstract_activity> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen>)
+fof(axiom148,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Abstract_activity> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen>)
+fof(axiom149,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen'))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Port>))
+fof(axiom150,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadOutPort>))
+fof(axiom151,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadOutPort'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadOutPort>))
+fof(axiom152,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadOutPort'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% Declaration(NamedIndividual(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_INPUT_TREE_GEN>))
+fof(axiom153,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#composedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_SUBTREES> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SUBTREES>)
+fof(axiom154,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_composedBy'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_SUBTREES','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SUBTREES'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#composedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_SUBTREES> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SUBTREES>)
+fof(axiom155,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_SUBTREES'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#composedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_SUBTREES> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SUBTREES>)
+fof(axiom156,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SUBTREES'))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasInformedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Execution>)
+fof(axiom157,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasInformedBy'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution'(X0)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#generatedBy>))
+fof(axiom158,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_generatedBy'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#generatedBy>))
+fof(axiom159,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_generatedBy'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_TREE>)
+fof(axiom160,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutPort'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_TREE>)
+fof(axiom161,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_TREE>)
+fof(axiom162,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE'))).
+% FunctionalDataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasId>)
+fof(axiom163,axiom,(![X0,X1,X2]:(('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasId'(X0,X1)&'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasId'(X0,X2))=>(X1=X2)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#qualifiedAssociation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Association>)
+fof(axiom164,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_qualifiedAssociation'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Association'(X1)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasDefaultParam> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>)
+fof(axiom165,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasDefaultParam'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X1)))).
+% DataPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#provenanceUriTemplate> owl:Thing)
+fof(axiom166,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_provenanceUriTemplate'(X0,X1)=>'http___www_w3_org_2002_07_owl_Thing'(X0)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Association>))
+fof(axiom167,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Association'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#generatedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_SUBTREES> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree>)
+fof(axiom168,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_generatedBy'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_SUBTREES','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#generatedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_SUBTREES> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree>)
+fof(axiom169,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_SUBTREES'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#generatedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_SUBTREES> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree>)
+fof(axiom170,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree'))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasPartOf>))
+fof(axiom171,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasPartOf'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasPartOf>))
+fof(axiom172,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasPartOf'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% Declaration(NamedIndividual(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree>))
+fof(axiom173,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree'))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#qualifiedAssociation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Execution>)
+fof(axiom174,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_qualifiedAssociation'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution'(X0)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#belongsTo> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#NMFSt>)
+fof(axiom175,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#belongsTo> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#NMFSt>)
+fof(axiom176,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#belongsTo> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#NMFSt>)
+fof(axiom177,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#consumedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_INPUT_TREE_GEN> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen>)
+fof(axiom178,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_consumedBy'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#consumedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_INPUT_TREE_GEN> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen>)
+fof(axiom179,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#consumedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_INPUT_TREE_GEN> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen>)
+fof(axiom180,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen'))).
+% InverseObjectProperties(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#controlledBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#controls>)
+fof(axiom181,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_controlledBy'(X0,X1)<=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_controls'(X1,X0)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>))
+fof(axiom182,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#composedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_TREE_GEN> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_TREE_OUTPUT>)
+fof(axiom183,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_composedBy'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_TREE_OUTPUT'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#composedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_TREE_GEN> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_TREE_OUTPUT>)
+fof(axiom184,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#composedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_TREE_GEN> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_TREE_OUTPUT>)
+fof(axiom185,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_TREE_OUTPUT'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#composedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_INPUT_TREE_GEN> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SEQUENCES_OUTPUT_FORMAT>)
+fof(axiom186,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_composedBy'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SEQUENCES_OUTPUT_FORMAT'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#composedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_INPUT_TREE_GEN> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SEQUENCES_OUTPUT_FORMAT>)
+fof(axiom187,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#composedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_INPUT_TREE_GEN> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SEQUENCES_OUTPUT_FORMAT>)
+fof(axiom188,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SEQUENCES_OUTPUT_FORMAT'))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMemoryAvailable>))
+fof(axiom189,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMemoryAvailable'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMemoryAvailable>))
+fof(axiom190,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMemoryAvailable'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutPort>))
+fof(axiom191,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutPort'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutPort>))
+fof(axiom192,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutPort'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#diskBusyTimeAverage>))
+fof(axiom193,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_diskBusyTimeAverage'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#diskBusyTimeAverage>))
+fof(axiom194,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_diskBusyTimeAverage'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadEntity>))
+fof(axiom195,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadEntity'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadEntity>))
+fof(axiom196,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadEntity'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Phylogenetic_tree_generation_operation_0547>))
+fof(axiom197,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Phylogenetic_tree_generation_operation_0547'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Domain_Operation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>)
+fof(axiom198,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Domain_Operation'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X0)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInputChannel> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Abstract_activity>)
+fof(axiom199,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInputChannel'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity'(X1)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#belongsTo>))
+fof(axiom200,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#belongsTo>))
+fof(axiom201,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#connectsTo>))
+fof(axiom202,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_connectsTo'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#connectsTo>))
+fof(axiom203,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_connectsTo'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadPlan> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Association>)
+fof(axiom204,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadPlan'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Association'(X0)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMaxExecutionTime>))
+fof(axiom205,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMaxExecutionTime'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMaxExecutionTime>))
+fof(axiom206,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMaxExecutionTime'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Program>))
+fof(axiom207,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasInformedBy>))
+fof(axiom208,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasInformedBy'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasInformedBy>))
+fof(axiom209,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasInformedBy'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutputRelation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_SUBTREES>)
+fof(axiom210,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutputRelation'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_SUBTREES'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutputRelation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_SUBTREES>)
+fof(axiom211,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutputRelation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_SUBTREES>)
+fof(axiom212,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_SUBTREES'))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasDefaultParam> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Port>)
+fof(axiom213,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasDefaultParam'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port'(X0)))).
+% DataPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#endedAtTime> owl:Thing)
+fof(axiom214,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_endedAtTime'(X0,X1)=>'http___www_w3_org_2002_07_owl_Thing'(X0)))).
+% FunctionalDataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasIdleTime>)
+fof(axiom215,axiom,(![X0,X1,X2]:(('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasIdleTime'(X0,X1)&'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasIdleTime'(X0,X2))=>(X1=X2)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#qualifiedUsage>))
+fof(axiom216,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_qualifiedUsage'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#qualifiedUsage>))
+fof(axiom217,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_qualifiedUsage'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% DataPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#startedAtTime> xsd:dateTime)
+fof(axiom218,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_startedAtTime'(X0,X1)=>'http___www_w3_org_2001_XMLSchema_dateTime'(X1)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Sequence_alignment_refinament_operation_2089>))
+fof(axiom219,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Sequence_alignment_refinament_operation_2089'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasUserCpu>))
+fof(axiom220,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasUserCpu'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasUserCpu>))
+fof(axiom221,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasUserCpu'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW>)
+fof(axiom222,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW>)
+fof(axiom223,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW'))).
+% Declaration(NamedIndividual(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_SUBTREES>))
+fof(axiom224,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_SUBTREES'))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasGeneratedBy>))
+fof(axiom225,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasGeneratedBy'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasGeneratedBy>))
+fof(axiom226,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasGeneratedBy'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith>))
+fof(axiom227,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith>))
+fof(axiom228,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% Declaration(NamedIndividual(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program>))
+fof(axiom229,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program'))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#User>)
+fof(axiom230,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_User'(X1)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Bio> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Domain_Operation>)
+fof(axiom231,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Bio'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Domain_Operation'(X0)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Attribute> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SEQUENCES_OUTPUT_FORMAT>)
+fof(axiom232,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Attribute'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SEQUENCES_OUTPUT_FORMAT'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Attribute> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SEQUENCES_OUTPUT_FORMAT>)
+fof(axiom233,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SEQUENCES_OUTPUT_FORMAT'))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#memoryUsageAverage>))
+fof(axiom234,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_memoryUsageAverage'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#memoryUsageAverage>))
+fof(axiom235,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_memoryUsageAverage'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#A_Type>))
+fof(axiom236,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_A_Type'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadInPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Port>)
+fof(axiom237,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadInPort'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port'(X1)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Phylogenetic_tree_generation_operation_0547> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Bio>)
+fof(axiom238,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Phylogenetic_tree_generation_operation_0547'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Bio'(X0)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#implements> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree>)
+fof(axiom239,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_implements'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#implements> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree>)
+fof(axiom240,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#implements> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree>)
+fof(axiom241,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree'))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Collection> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>)
+fof(axiom242,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Collection'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X0)))).
+% DataPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasRetrospectiveCall> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> "true"^^xsd:boolean)
+fof(axiom243,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasRetrospectiveCall'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW','true'))).
+% DataPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasRetrospectiveCall> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> "true"^^xsd:boolean)
+fof(axiom244,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW'))).
+% DataPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasRetrospectiveCall> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> "true"^^xsd:boolean)
+fof(axiom245,axiom,('http___www_w3_org_2000_01_rdf_schema_Literal'('true'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Configuration_Parameter> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#--act>)
+fof(axiom246,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Configuration_Parameter'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13___act'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Configuration_Parameter> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#--act>)
+fof(axiom247,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13___act'))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Sequencing_quality_control> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Bio>)
+fof(axiom248,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Sequencing_quality_control'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Bio'(X0)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#controls> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Controller>)
+fof(axiom249,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_controls'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Controller'(X0)))).
+% FunctionalDataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#diskWriteBytesAverage>)
+fof(axiom250,axiom,(![X0,X1,X2]:(('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_diskWriteBytesAverage'(X0,X1)&'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_diskWriteBytesAverage'(X0,X2))=>(X1=X2)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Program>)
+fof(axiom251,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInPort'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program'(X0)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasAttribute> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Relation>)
+fof(axiom252,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasAttribute'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Relation'(X1)))).
+% DataPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#provenanceUriTemplate> xsd:Name)
+fof(axiom253,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_provenanceUriTemplate'(X0,X1)=>'http___www_w3_org_2001_XMLSchema_Name'(X1)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInputChannel>))
+fof(axiom254,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInputChannel'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInputChannel>))
+fof(axiom255,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInputChannel'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasDerivedFrom> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Program>)
+fof(axiom256,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasDerivedFrom'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program'(X0)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Abstract_activity> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Experiment_Line>)
+fof(axiom257,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Experiment_Line'(X0)))).
+% DataPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#pairKey> owl:Thing)
+fof(axiom258,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_pairKey'(X0,X1)=>'http___www_w3_org_2002_07_owl_Thing'(X0)))).
+% FunctionalDataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#diskBusyTimeAverage>)
+fof(axiom259,axiom,(![X0,X1,X2]:(('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_diskBusyTimeAverage'(X0,X1)&'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_diskBusyTimeAverage'(X0,X2))=>(X1=X2)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#removedKey>))
+fof(axiom260,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_removedKey'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#removedKey>))
+fof(axiom261,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_removedKey'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Collection>))
+fof(axiom262,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Collection'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% FunctionalDataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasUserCpu>)
+fof(axiom263,axiom,(![X0,X1,X2]:(('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasUserCpu'(X0,X1)&'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasUserCpu'(X0,X2))=>(X1=X2)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#used> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>)
+fof(axiom264,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_used'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X1)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Controller> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>)
+fof(axiom265,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Controller'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X0)))).
+% Declaration(NamedIndividual(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_TREE>))
+fof(axiom266,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE'))).
+% SubObjectPropertyOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInputRelation> owl:topObjectProperty)
+fof(axiom267,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInputRelation'(X0,X1)=>'http___www_w3_org_2002_07_owl_topObjectProperty'(X0,X1)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Port> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#nexus>)
+fof(axiom268,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_nexus'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Port> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#nexus>)
+fof(axiom269,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_nexus'))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Variant>))
+fof(axiom270,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Variant'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>)
+fof(axiom271,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X0)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Optional> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Activity_Type>)
+fof(axiom272,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Optional'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Activity_Type'(X0)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMetadata> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#--act>)
+fof(axiom273,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMetadata'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13___act'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMetadata> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#--act>)
+fof(axiom274,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMetadata> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#--act>)
+fof(axiom275,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13___act'))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadEntity> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>)
+fof(axiom276,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadEntity'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X1)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Optional>))
+fof(axiom277,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Optional'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasIdleTime>))
+fof(axiom278,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasIdleTime'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasIdleTime>))
+fof(axiom279,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasIdleTime'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Equivalence> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Abstract_activity>)
+fof(axiom280,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Equivalence'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity'(X0)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMetadata> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#constructor2.py>)
+fof(axiom281,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMetadata'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_constructor2_py'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMetadata> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#constructor2.py>)
+fof(axiom282,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMetadata> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#constructor2.py>)
+fof(axiom283,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_constructor2_py'))).
+% DataPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#removedKey> xsd:integer)
+fof(axiom284,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_removedKey'(X0,X1)=>'http___www_w3_org_2001_XMLSchema_integer'(X1)))).
+% DataPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasRetrospectiveCall> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> "true"^^xsd:boolean)
+fof(axiom285,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasRetrospectiveCall'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program','true'))).
+% DataPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasRetrospectiveCall> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> "true"^^xsd:boolean)
+fof(axiom286,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program'))).
+% DataPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasRetrospectiveCall> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> "true"^^xsd:boolean)
+fof(axiom287,axiom,('http___www_w3_org_2000_01_rdf_schema_Literal'('true'))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Equivalence> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>)
+fof(axiom288,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Equivalence'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X0)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Attribute> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Experiment_Line>)
+fof(axiom289,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Attribute'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Experiment_Line'(X0)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#qualifiedUsage> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Execution>)
+fof(axiom290,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_qualifiedUsage'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution'(X0)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#composedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Attribute>)
+fof(axiom291,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_composedBy'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Attribute'(X1)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#pairKey>))
+fof(axiom292,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_pairKey'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#pairKey>))
+fof(axiom293,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_pairKey'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Data>))
+fof(axiom294,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Data'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Uri> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Metadata>)
+fof(axiom295,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Uri'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Metadata'(X0)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Url> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Metadata>)
+fof(axiom296,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Url'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Metadata'(X0)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Sequence_alignment_operation_0292> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Bio>)
+fof(axiom297,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Sequence_alignment_operation_0292'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Bio'(X0)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadInPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Usage>)
+fof(axiom298,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadInPort'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Usage'(X0)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInputRelation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_TREE_GEN>)
+fof(axiom299,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInputRelation'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInputRelation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_TREE_GEN>)
+fof(axiom300,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInputRelation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_TREE_GEN>)
+fof(axiom301,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_TREE> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_TREE_OUTPUT>)
+fof(axiom302,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_TREE_OUTPUT'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_TREE> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_TREE_OUTPUT>)
+fof(axiom303,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_TREE> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_TREE_OUTPUT>)
+fof(axiom304,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_TREE_OUTPUT'))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadExecution>))
+fof(axiom305,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadExecution'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadExecution>))
+fof(axiom306,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadExecution'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#executedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program>)
+fof(axiom307,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_executedBy'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#executedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program>)
+fof(axiom308,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#executedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program>)
+fof(axiom309,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#implements> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen>)
+fof(axiom310,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_implements'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#implements> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen>)
+fof(axiom311,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#implements> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen>)
+fof(axiom312,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen'))).
+% FunctionalDataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#diskReadBytesAverage>)
+fof(axiom313,axiom,(![X0,X1,X2]:(('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_diskReadBytesAverage'(X0,X1)&'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_diskReadBytesAverage'(X0,X2))=>(X1=X2)))).
+% DataPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#value> owl:Thing)
+fof(axiom314,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_value'(X0,X1)=>'http___www_w3_org_2002_07_owl_Thing'(X0)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#First>))
+fof(axiom315,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_First'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasDerivedFrom>))
+fof(axiom316,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasDerivedFrom'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasDerivedFrom>))
+fof(axiom317,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasDerivedFrom'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Phylogenetic_tree_generation_operation_0547> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen>)
+fof(axiom318,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Phylogenetic_tree_generation_operation_0547'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Phylogenetic_tree_generation_operation_0547> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen>)
+fof(axiom319,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen'))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasTemplate>))
+fof(axiom320,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasTemplate'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasTemplate>))
+fof(axiom321,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasTemplate'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Configuration_Parameter> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Metadata>)
+fof(axiom322,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Configuration_Parameter'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Metadata'(X0)))).
+% Declaration(NamedIndividual(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#sources/NMFSt/code/sub_find.py>))
+fof(axiom323,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_sources_NMFSt_code_sub_find_py'))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Mandatory> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Activity_Type>)
+fof(axiom324,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Mandatory'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Activity_Type'(X0)))).
+% Declaration(NamedIndividual(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_TREE_GEN>))
+fof(axiom325,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN'))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#User>))
+fof(axiom326,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_User'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% FunctionalDataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMemoryAvailable>)
+fof(axiom327,axiom,(![X0,X1,X2]:(('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMemoryAvailable'(X0,X1)&'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMemoryAvailable'(X0,X2))=>(X1=X2)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#generatedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_TREE_GEN> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen>)
+fof(axiom328,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_generatedBy'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#generatedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_TREE_GEN> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen>)
+fof(axiom329,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#generatedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_TREE_GEN> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen>)
+fof(axiom330,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen'))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Channel> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>)
+fof(axiom331,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Channel'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X0)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutputChannel> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Channel>)
+fof(axiom332,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutputChannel'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Channel'(X1)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Association> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ProvOne>)
+fof(axiom333,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Association'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne'(X0)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Experiment_Line> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>)
+fof(axiom334,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Experiment_Line'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X0)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMetadata>))
+fof(axiom335,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMetadata'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMetadata>))
+fof(axiom336,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMetadata'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Port> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#full_dataset_plasmodium>)
+fof(axiom337,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_full_dataset_plasmodium'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Port> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#full_dataset_plasmodium>)
+fof(axiom338,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_full_dataset_plasmodium'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#nexus>)
+fof(axiom339,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInPort'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_nexus'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#nexus>)
+fof(axiom340,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#nexus>)
+fof(axiom341,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_nexus'))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasPartOf> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Execution>)
+fof(axiom342,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasPartOf'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution'(X1)))).
+% FunctionalDataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#consumedMemory>)
+fof(axiom343,axiom,(![X0,X1,X2]:(('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_consumedMemory'(X0,X1)&'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_consumedMemory'(X0,X2))=>(X1=X2)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Url> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#constructor2.py>)
+fof(axiom344,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Url'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_constructor2_py'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Url> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#constructor2.py>)
+fof(axiom345,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_constructor2_py'))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasAttribute>))
+fof(axiom346,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasAttribute'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasAttribute>))
+fof(axiom347,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasAttribute'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInputRelation>))
+fof(axiom348,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInputRelation'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInputRelation>))
+fof(axiom349,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInputRelation'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#belongsTo> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#NMFSt>)
+fof(axiom350,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#belongsTo> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#NMFSt>)
+fof(axiom351,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#belongsTo> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#NMFSt>)
+fof(axiom352,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_NMFSt'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#full_dataset_plasmodium>)
+fof(axiom353,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInPort'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_full_dataset_plasmodium'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#full_dataset_plasmodium>)
+fof(axiom354,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#full_dataset_plasmodium>)
+fof(axiom355,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_full_dataset_plasmodium'))).
+% Declaration(NamedIndividual(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SUBTREES>))
+fof(axiom356,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SUBTREES'))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadPlan>))
+fof(axiom357,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadPlan'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadPlan>))
+fof(axiom358,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadPlan'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadInPort>))
+fof(axiom359,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadInPort'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadInPort>))
+fof(axiom360,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadInPort'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#endedAtTime>))
+fof(axiom361,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_endedAtTime'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#endedAtTime>))
+fof(axiom362,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_endedAtTime'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#implements> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Abstract_activity>)
+fof(axiom363,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_implements'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity'(X1)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Abstract_activity> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree>)
+fof(axiom364,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Abstract_activity> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree>)
+fof(axiom365,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree'))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#used>))
+fof(axiom366,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_used'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#used>))
+fof(axiom367,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_used'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#controls> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Program>)
+fof(axiom368,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_controls'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program'(X1)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Sequencing_quality_control> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Activity_Domain_Type>)
+fof(axiom369,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Sequencing_quality_control'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Activity_Domain_Type'(X0)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Bio>))
+fof(axiom370,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Bio'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Phylogenetic_tree_generation_operation_0547> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Activity_Domain_Type>)
+fof(axiom371,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Phylogenetic_tree_generation_operation_0547'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Activity_Domain_Type'(X0)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInputRelation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_INPUT_TREE_GEN>)
+fof(axiom372,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInputRelation'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInputRelation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_INPUT_TREE_GEN>)
+fof(axiom373,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInputRelation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_INPUT_TREE_GEN>)
+fof(axiom374,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN'))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutputRelation>))
+fof(axiom375,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutputRelation'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutputRelation>))
+fof(axiom376,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutputRelation'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Usage> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ProvOne>)
+fof(axiom377,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Usage'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne'(X0)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Relation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Experiment_Line>)
+fof(axiom378,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Relation'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Experiment_Line'(X0)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Program>)
+fof(axiom379,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutPort'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program'(X0)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_INPUT_SEQUENCE> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#full_dataset_plasmodium>)
+fof(axiom380,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_INPUT_SEQUENCE','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_full_dataset_plasmodium'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_INPUT_SEQUENCE> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#full_dataset_plasmodium>)
+fof(axiom381,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_INPUT_SEQUENCE'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_INPUT_SEQUENCE> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#full_dataset_plasmodium>)
+fof(axiom382,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_full_dataset_plasmodium'))).
+% DataPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#removedKey> owl:Thing)
+fof(axiom383,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_removedKey'(X0,X1)=>'http___www_w3_org_2002_07_owl_Thing'(X0)))).
+% DataPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#pairKey> rdfs:Literal)
+fof(axiom384,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_pairKey'(X0,X1)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(X1)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadOutPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Generation>)
+fof(axiom385,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadOutPort'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Generation'(X0)))).
+% DataPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#atTime> xsd:dateTime)
+fof(axiom386,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_atTime'(X0,X1)=>'http___www_w3_org_2001_XMLSchema_dateTime'(X1)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SEQUENCES_OUTPUT_FORMAT> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#nexus>)
+fof(axiom387,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SEQUENCES_OUTPUT_FORMAT','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_nexus'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SEQUENCES_OUTPUT_FORMAT> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#nexus>)
+fof(axiom388,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SEQUENCES_OUTPUT_FORMAT'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SEQUENCES_OUTPUT_FORMAT> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#nexus>)
+fof(axiom389,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_nexus'))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Sequence_alignment_refinament_operation_2089> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Activity_Domain_Type>)
+fof(axiom390,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Sequence_alignment_refinament_operation_2089'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Activity_Domain_Type'(X0)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#User> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ProvOne>)
+fof(axiom391,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_User'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne'(X0)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInputRelation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Abstract_activity>)
+fof(axiom392,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInputRelation'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Abstract_activity'(X0)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SUBTREES> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_SUBTREES>)
+fof(axiom393,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SUBTREES','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_SUBTREES'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SUBTREES> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_SUBTREES>)
+fof(axiom394,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SUBTREES'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SUBTREES> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_SUBTREES>)
+fof(axiom395,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_SUBTREES'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Relation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_SUBTREES>)
+fof(axiom396,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Relation'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_SUBTREES'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Relation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_SUBTREES>)
+fof(axiom397,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_SUBTREES'))).
+% Declaration(NamedIndividual(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_SEQUENCES_OUTPUT_FORMAT>))
+fof(axiom398,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_SEQUENCES_OUTPUT_FORMAT'))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Description>))
+fof(axiom399,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Description'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#A_Type> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>)
+fof(axiom400,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_A_Type'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X0)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Uri>))
+fof(axiom401,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Uri'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% DataPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#startedAtTime> owl:Thing)
+fof(axiom402,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_startedAtTime'(X0,X1)=>'http___www_w3_org_2002_07_owl_Thing'(X0)))).
+% FunctionalDataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#totalExecutionTime>)
+fof(axiom403,axiom,(![X0,X1,X2]:(('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_totalExecutionTime'(X0,X1)&'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_totalExecutionTime'(X0,X2))=>(X1=X2)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Usage>))
+fof(axiom404,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Usage'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#consumedMemory>))
+fof(axiom405,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_consumedMemory'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#consumedMemory>))
+fof(axiom406,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_consumedMemory'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#First> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#A_Type>)
+fof(axiom407,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_First'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_A_Type'(X0)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#full_dataset_plasmodium> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_INPUT_SEQUENCE>)
+fof(axiom408,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_full_dataset_plasmodium','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_INPUT_SEQUENCE'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#full_dataset_plasmodium> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_INPUT_SEQUENCE>)
+fof(axiom409,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_full_dataset_plasmodium'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#full_dataset_plasmodium> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_INPUT_SEQUENCE>)
+fof(axiom410,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_INPUT_SEQUENCE'))).
+% Declaration(NamedIndividual(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen>))
+fof(axiom411,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_TREE>)
+fof(axiom412,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInPort'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_TREE>)
+fof(axiom413,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_TREE>)
+fof(axiom414,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE'))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasSource>))
+fof(axiom415,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasSource'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasSource>))
+fof(axiom416,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasSource'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Mandatory> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen>)
+fof(axiom417,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Mandatory'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Mandatory> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen>)
+fof(axiom418,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen'))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Terms_of_use> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Metadata>)
+fof(axiom419,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Terms_of_use'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Metadata'(X0)))).
+% FunctionalObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#belongsTo>)
+fof(axiom420,axiom,(![X0,X1,X2]:(('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo'(X0,X1)&'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_belongsTo'(X0,X2))=>(X1=X2)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#implements> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Program>)
+fof(axiom421,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_implements'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program'(X0)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Terms_of_use>))
+fof(axiom422,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Terms_of_use'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Document> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>)
+fof(axiom423,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Document'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X0)))).
+% DataPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasId> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> "2"^^xsd:integer)
+fof(axiom424,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasId'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program','2'))).
+% DataPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasId> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> "2"^^xsd:integer)
+fof(axiom425,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program'))).
+% DataPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasId> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> "2"^^xsd:integer)
+fof(axiom426,axiom,('http___www_w3_org_2000_01_rdf_schema_Literal'('2'))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasRetrospectiveCall>))
+fof(axiom427,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasRetrospectiveCall'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasRetrospectiveCall>))
+fof(axiom428,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasRetrospectiveCall'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Activity_Type> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#A_Type>)
+fof(axiom429,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Activity_Type'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_A_Type'(X0)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasGeneratedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Execution>)
+fof(axiom430,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasGeneratedBy'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution'(X1)))).
+% DataPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#atTime> owl:Thing)
+fof(axiom431,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_atTime'(X0,X1)=>'http___www_w3_org_2002_07_owl_Thing'(X0)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInputRelation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Relation>)
+fof(axiom432,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInputRelation'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Relation'(X1)))).
+% FunctionalDataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#memoryUsageAverage>)
+fof(axiom433,axiom,(![X0,X1,X2]:(('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_memoryUsageAverage'(X0,X1)&'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_memoryUsageAverage'(X0,X2))=>(X1=X2)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Workflow>))
+fof(axiom434,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Workflow'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMetadata> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#sources/NMFSt/code/sub_find.py>)
+fof(axiom435,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMetadata'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_sources_NMFSt_code_sub_find_py'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMetadata> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#sources/NMFSt/code/sub_find.py>)
+fof(axiom436,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMetadata> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#sources/NMFSt/code/sub_find.py>)
+fof(axiom437,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_sources_NMFSt_code_sub_find_py'))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Experiment_Line>))
+fof(axiom438,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Experiment_Line'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% FunctionalDataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMaxExecutionTime>)
+fof(axiom439,axiom,(![X0,X1,X2]:(('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMaxExecutionTime'(X0,X1)&'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMaxExecutionTime'(X0,X2))=>(X1=X2)))).
+% Declaration(NamedIndividual(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW>))
+fof(axiom440,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW'))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#qualifiedGeneration>))
+fof(axiom441,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_qualifiedGeneration'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#qualifiedGeneration>))
+fof(axiom442,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_qualifiedGeneration'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#consumedBy>))
+fof(axiom443,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_consumedBy'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#consumedBy>))
+fof(axiom444,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_consumedBy'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Phylogenetic_tree_generation_operation_0547> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program>)
+fof(axiom445,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Phylogenetic_tree_generation_operation_0547'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Phylogenetic_tree_generation_operation_0547> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program>)
+fof(axiom446,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program'))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#controlledBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Controller>)
+fof(axiom447,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_controlledBy'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Controller'(X1)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Controller>))
+fof(axiom448,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Controller'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#timeAverage>))
+fof(axiom449,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_timeAverage'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#timeAverage>))
+fof(axiom450,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_timeAverage'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMetadata> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#--act>)
+fof(axiom451,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMetadata'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13___act'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMetadata> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#--act>)
+fof(axiom452,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_SubTree_Program'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMetadata> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#SubTree_Program> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#--act>)
+fof(axiom453,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13___act'))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Attribute>))
+fof(axiom454,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Attribute'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ProvOne>)
+fof(axiom455,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne'(X0)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#atTime>))
+fof(axiom456,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_atTime'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#atTime>))
+fof(axiom457,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_atTime'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Metadata> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>)
+fof(axiom458,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Metadata'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X0)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Phylogenetic_tree_generation_operation_0547> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree>)
+fof(axiom459,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Phylogenetic_tree_generation_operation_0547'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Phylogenetic_tree_generation_operation_0547> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree>)
+fof(axiom460,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#First> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen>)
+fof(axiom461,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_First'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#First> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_tree_gen>)
+fof(axiom462,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_tree_gen'))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#qualifiedAssociation>))
+fof(axiom463,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_qualifiedAssociation'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#qualifiedAssociation>))
+fof(axiom464,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_qualifiedAssociation'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#provenanceUriTemplate>))
+fof(axiom465,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_provenanceUriTemplate'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#provenanceUriTemplate>))
+fof(axiom466,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_provenanceUriTemplate'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% Declaration(NamedIndividual(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_SUBTREES>))
+fof(axiom467,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_SUBTREES'))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#composedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Collection>)
+fof(axiom468,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_composedBy'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Collection'(X0)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Activity_Domain_Type> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#A_Type>)
+fof(axiom469,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Activity_Domain_Type'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_A_Type'(X0)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Relation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_INPUT_TREE_GEN>)
+fof(axiom470,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Relation'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Relation> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_INPUT_TREE_GEN>)
+fof(axiom471,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_INPUT_TREE_GEN'))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasInPort> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Port>)
+fof(axiom472,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasInPort'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port'(X1)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#qualifiedUsage> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Usage>)
+fof(axiom473,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_qualifiedUsage'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Usage'(X1)))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#consumedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_TREE_GEN> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree>)
+fof(axiom474,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_consumedBy'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN','http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#consumedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_TREE_GEN> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree>)
+fof(axiom475,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_REL_OUTPUT_TREE_GEN'))).
+% ObjectPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#consumedBy> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#REL_OUTPUT_TREE_GEN> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree>)
+fof(axiom476,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree'))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasPartOf> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Execution>)
+fof(axiom477,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasPartOf'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution'(X0)))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasSubProgram> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Program>)
+fof(axiom478,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasSubProgram'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Program'(X1)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Variant> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Activity_Type>)
+fof(axiom479,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Variant'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Activity_Type'(X0)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Mandatory> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree>)
+fof(axiom480,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Mandatory'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Mandatory> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Act_sub_tree>)
+fof(axiom481,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Act_sub_tree'))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Visualization> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>)
+fof(axiom482,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Visualization'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X0)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#invalidatedAtTime>))
+fof(axiom483,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_invalidatedAtTime'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#invalidatedAtTime>))
+fof(axiom484,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_invalidatedAtTime'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#agent> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Association>)
+fof(axiom485,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_agent'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Association'(X0)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasAttribute> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Attribute>)
+fof(axiom486,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasAttribute'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Attribute'(X0)))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hadMember> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Collection>)
+fof(axiom487,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hadMember'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Collection'(X0)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#value>))
+fof(axiom488,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_value'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(DataProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#value>))
+fof(axiom489,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_value'(X,Y)=>'http___www_w3_org_2000_01_rdf_schema_Literal'(Y)))).
+% DataPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#endedAtTime> xsd:dateTime)
+fof(axiom490,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_endedAtTime'(X0,X1)=>'http___www_w3_org_2001_XMLSchema_dateTime'(X1)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Execution> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ProvOne>)
+fof(axiom491,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ProvOne'(X0)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Data> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>)
+fof(axiom492,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Data'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X0)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Metadata> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#--act>)
+fof(axiom493,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Metadata'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13___act'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Metadata> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#--act>)
+fof(axiom494,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13___act'))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Activity_Type>))
+fof(axiom495,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Activity_Type'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Port> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Entity>)
+fof(axiom496,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Entity'(X0)))).
+% DataPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasId> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> "1"^^xsd:integer)
+fof(axiom497,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasId'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW','1'))).
+% DataPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasId> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> "1"^^xsd:integer)
+fof(axiom498,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ClustalW'))).
+% DataPropertyAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasId> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ClustalW> "1"^^xsd:integer)
+fof(axiom499,axiom,('http___www_w3_org_2000_01_rdf_schema_Literal'('1'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Attribute> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_INPUT_SEQUENCE>)
+fof(axiom500,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Attribute'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_INPUT_SEQUENCE'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Attribute> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#ATT_INPUT_SEQUENCE>)
+fof(axiom501,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_ATT_INPUT_SEQUENCE'))).
+% ObjectPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasMetadata> owl:Thing)
+fof(axiom502,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasMetadata'(X0,X1)=>'http___www_w3_org_2002_07_owl_Thing'(X1)))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Port> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_TREE>)
+fof(axiom503,axiom,('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Port'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE'))).
+% ClassAssertion(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Port> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#PORT_TREE>)
+fof(axiom504,axiom,('http___www_w3_org_2002_07_owl_Thing'('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_PORT_TREE'))).
+% ObjectPropertyDomain(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#wasAssociatedWith> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Execution>)
+fof(axiom505,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_wasAssociatedWith'(X0,X1)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Execution'(X0)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Equivalence>))
+fof(axiom506,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Equivalence'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(Class(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Domain_Operation>))
+fof(axiom507,axiom,(![X]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Domain_Operation'(X)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutputChannel>))
+fof(axiom508,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutputChannel'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(X)))).
+% Declaration(ObjectProperty(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#hasOutputChannel>))
+fof(axiom509,axiom,(![X,Y]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_hasOutputChannel'(X,Y)=>'http___www_w3_org_2002_07_owl_Thing'(Y)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Sequence_alignment_conversion_operation_0260> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Bio>)
+fof(axiom510,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Sequence_alignment_conversion_operation_0260'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Bio'(X0)))).
+% SubClassOf(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Description> <http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#Metadata>)
+fof(axiom511,axiom,(![X0]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Description'(X0)=>'http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_Metadata'(X0)))).
+% DataPropertyRange(<http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#invalidatedAtTime> xsd:dateTime)
+fof(axiom512,axiom,(![X0,X1]:('http___www_semanticweb_org_luizgustavo_ontologies_2020_1_untitled_ontology_13_invalidatedAtTime'(X0,X1)=>'http___www_w3_org_2001_XMLSchema_dateTime'(X1)))).
+% background axiom: all pairs of things are connected via owl:topObjectProperty
+fof(axiom513,axiom,(![X,Y]:('http___www_w3_org_2002_07_owl_topObjectProperty'(X,Y)<=>('http___www_w3_org_2002_07_owl_Thing'(X)&'http___www_w3_org_2002_07_owl_Thing'(Y))))).

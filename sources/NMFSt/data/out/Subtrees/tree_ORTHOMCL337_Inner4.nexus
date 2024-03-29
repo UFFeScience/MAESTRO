@@ -1,0 +1,8 @@
+#NEXUS
+Begin Taxa;
+ Dimensions NTax=5;
+ TaxLabels 2lcl|AAX79562.1 9lcl|XP_817430.1 8lcl|XP_814268.1 1lcl|AAN08877.1 6lcl|XP_001681074.1;
+End;
+Begin Trees;
+ Tree tree1=((2lcl|AAX79562.1:0.25255,(9lcl|XP_817430.1:0.01025,8lcl|XP_814268.1:0.00827)Inner1:0.24282)Inner3:0.13672,(1lcl|AAN08877.1:0.07022,6lcl|XP_001681074.1:0.07793)Inner2:0.18736)Inner4:0.01302;
+End;

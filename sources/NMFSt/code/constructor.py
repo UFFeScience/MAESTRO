@@ -15,29 +15,44 @@ Original file is located at
 
 <h3 align="center"><b>IMPORTS E CONFIGURAÇÃO DO DIRETÓRIO BASE</b></h3>
 """
+import argparse
+import sys
 
+from Bio import SeqIO, AlignIO, Phylo
 from Bio.Align.Applications import ClustalwCommandline
-from Bio import AlignIO, Phylo, SeqIO
+import Bio
 from Bio.Phylo.TreeConstruction import DistanceCalculator, DistanceTreeConstructor
 import os
 from pathlib import Path
 
-# Substitua pelo caminho do diretório que você deseja listar e o formato das seqências
-INPUT_PATH = 'testset'
-OUTPUT_FORMAT = 'nexus' # newick ou nexus
+parser = argparse.ArgumentParser(description='Descrição do script.')
+parser.add_argument('arg1', type=str, help='dataset de entrada')
+parser.add_argument('arg2', type=str, help='formato da saida')
+parser.add_argument('arg3', type=str, help='programa')
+
+args = parser.parse_args()
+
+# arg1 e arg 2 sao passados no wf.py e são o dataset e o formato respectivamente
+INPUT_PATH = args.arg1
+OUTPUT_FORMAT = args.arg2 # newick ou nexus
+print("aqui")
+print(os.system("ls"))
 match OUTPUT_FORMAT:
     case 'nexus':
         EXTENTION_FORMAT = 'nexus' # Nexus: 'nexus'
 
     case 'nwk':
         EXTENTION_FORMAT = 'nwk' # Newick: 'nwk'
+print(os.system("ls"))
 
-DATA_PATH = '../data'
+DATA_PATH = '../data/'
 DATA_OUTPUT_PATH = '../data/out'
 
 # listagem de arquivos
 dir = os.path.join(DATA_PATH, INPUT_PATH)
 files = os.listdir(dir)
+print(os.system("ls"))
+print(os.path.abspath(dir))
 
 """<h3 align="center"> <b>LIMPEZA</b> </h3>"""
 
@@ -67,6 +82,11 @@ def clean_NoPipe():
         if 'NoPipe' in file_name:
             file_path = os.path.join(dir_NoPipe, file_name)
             os.remove(file_path)
+
+
+f = open("../data/out/file.aln", "w")
+f.write("alignment")
+f.close()
 
 clean_NoPipe()
 clean_tmp()
@@ -135,6 +155,7 @@ def remove_pipe(name, path_in_fasta):
 
 # Mais informações sobre aplicações biopython e clustalwcommandline - https://biopython.org/docs/1.76/api/Bio.Align.Applications.html
 def constructor_tree(path_in_fasta, path_out_aln, path_out_dnd, path_old_dnd, path_out_tree):
+
     # Executa o Clustalw para alinhar as sequências
     clustalw_cline = ClustalwCommandline("clustalw", infile=path_in_fasta, outfile=path_out_aln)# Executa o programa clustalw sem precisar da linha de comando.
     clustalw_cline()#  Executa o comando ClustalW com base nos parâmetros definidos no objeto ClustalwCommandline e retorna os resultados da execução na forma de uma tupla de strings.

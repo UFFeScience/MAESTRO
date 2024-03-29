@@ -4,7 +4,8 @@
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
          xmlns:owl="http://www.w3.org/2002/07/owl#"
          xml:base="http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13"
-         xmlns="http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#">
+         xmlns="http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13#"
+         xmlns:term="http://purl.org/dc/terms/">
 
 <owl:Ontology rdf:about="http://www.semanticweb.org/luizgustavo/ontologies/2020/1/untitled-ontology-13"/>
 
@@ -32,9 +33,9 @@
 <owl:ObjectProperty rdf:about="#consumedBy"/>
 
 <owl:ObjectProperty rdf:about="#controlledBy">
+  <owl:inverseOf rdf:resource="#controls"/>
   <rdfs:domain rdf:resource="#Program"/>
   <rdfs:range rdf:resource="#Controller"/>
-  <owl:inverseOf rdf:resource="#controls"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#controls">
@@ -50,6 +51,8 @@
   <rdfs:domain rdf:resource="#Generation"/>
   <rdfs:range rdf:resource="#Entity"/>
 </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hadExecution"/>
 
 <owl:ObjectProperty rdf:about="#hadInPort">
   <rdfs:domain rdf:resource="#Usage"/>
@@ -92,9 +95,9 @@
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#hasInputRelation">
+  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
   <rdfs:domain rdf:resource="#Abstract_activity"/>
   <rdfs:range rdf:resource="#Relation"/>
-  <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
 </owl:ObjectProperty>
 
 <owl:ObjectProperty rdf:about="#hasMetadata">
@@ -116,6 +119,8 @@
   <rdfs:domain rdf:resource="#Abstract_activity"/>
   <rdfs:range rdf:resource="#Relation"/>
 </owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#hasSource"/>
 
 <owl:ObjectProperty rdf:about="#hasSubProgram">
   <rdfs:domain rdf:resource="#Program"/>
@@ -268,6 +273,10 @@
   <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
 </owl:DatatypeProperty>
 
+<owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
+  <term:license rdf:resource="https://creativecommons.org/licenses/by/4.0"/>
+</owl:AnnotationProperty>
+
 <owl:Class rdf:about="#Association">
   <rdfs:subClassOf rdf:resource="#ProvOne"/>
   <rdfs:comment>É uma atribuição de responsabilidade a um agente por uma atividade, indicando que o agente teve um papel na atividade.</rdfs:comment>
@@ -402,8 +411,8 @@
 
 <owl:Class rdf:about="#Configuration_Parameter">
   <rdfs:subClassOf rdf:resource="#Metadata"/>
-  <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Possiveis valores de atruibutos de configuração</rdfs:seeAlso>
-  <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">new annotation for entity</rdfs:seeAlso>
+  <rdfs:seeAlso>Possiveis valores de atruibutos de configuração</rdfs:seeAlso>
+  <rdfs:seeAlso>new annotation for entity</rdfs:seeAlso>
 </owl:Class>
 
 <owl:Class rdf:about="#Data">
@@ -413,7 +422,7 @@
 
 <owl:Class rdf:about="#Description">
   <rdfs:subClassOf rdf:resource="#Metadata"/>
-  <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Description of artefact</rdfs:seeAlso>
+  <rdfs:seeAlso>Description of artefact</rdfs:seeAlso>
 </owl:Class>
 
 <owl:Class rdf:about="#Document">
@@ -424,17 +433,6 @@
 <owl:Class rdf:about="#Equivalence">
   <rdfs:subClassOf rdf:resource="#Abstract_activity"/>
   <rdfs:subClassOf rdf:resource="#Entity"/>
-  <owl:equivalentClass>
-    <owl:Restriction>
-      <owl:onProperty rdf:resource="#hasOutputRelation"/>
-      <owl:someValuesFrom>
-        <owl:Restriction>
-          <owl:onProperty rdf:resource="#composedBy"/>
-          <owl:hasValue rdf:resource="#converted_alignment_att_eq"/>
-        </owl:Restriction>
-      </owl:someValuesFrom>
-    </owl:Restriction>
-  </owl:equivalentClass>
 </owl:Class>
 
 <owl:Class rdf:about="#First">
@@ -480,17 +478,17 @@
 
 <owl:Class rdf:about="#Terms_of_use">
   <rdfs:subClassOf rdf:resource="#Metadata"/>
-  <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Terms of use of artefact</rdfs:seeAlso>
+  <rdfs:seeAlso>Terms of use of artefact</rdfs:seeAlso>
 </owl:Class>
 
 <owl:Class rdf:about="#Uri">
   <rdfs:subClassOf rdf:resource="#Metadata"/>
-  <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniform resource identifier</rdfs:seeAlso>
+  <rdfs:seeAlso>uniform resource identifier</rdfs:seeAlso>
 </owl:Class>
 
 <owl:Class rdf:about="#Url">
   <rdfs:subClassOf rdf:resource="#Metadata"/>
-  <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uniform resource locator</rdfs:seeAlso>
+  <rdfs:seeAlso>uniform resource locator</rdfs:seeAlso>
 </owl:Class>
 
 <owl:Class rdf:about="#Variant">
@@ -508,397 +506,130 @@
   <rdfs:seeAlso>wasDerivedFrom</rdfs:seeAlso>
 </owl:Class>
 
-<Attribute rdf:about="#converted_alignment_att_eq">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</Attribute>
-
-<Abstract_activity rdf:about="#alinhamento">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Mandatory"/>
-  <rdf:type rdf:resource="#Sequence_alignment_operation_0292"/>
-  <rdf:type rdf:resource="#Variant"/>
-  <belongsTo rdf:resource="#Experiment_1"/>
-  <executedBy rdf:resource="#mafft"/>
-  <executedBy rdf:resource="#clustalw"/>
-  <hasInputRelation rdf:resource="#Rel_Validation_Out"/>
-  <hasOutputRelation rdf:resource="#Rel_Alignment_Out"/>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasId>
-</Abstract_activity>
-
-<Workflow rdf:about="#Experiment_1">
+<Workflow rdf:about="#NMFSt">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 </Workflow>
 
-<Program rdf:about="#mafft">
+<Attribute rdf:about="#ATT_INPUT_SEQUENCE">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Sequence_alignment_operation_0292"/>
-  <belongsTo rdf:resource="#Experiment_1"/>
-  <hasInPort rdf:resource="#VALIDATED_SEQUENCE"/>
-  <hasMetadata rdf:resource="#sources/SciPhy/cgi-bin/arpa.py"/>
-  <hasMetadata rdf:resource="#-t"/>
-  <hasMetadata rdf:resource="#-o"/>
-  <hasMetadata rdf:resource="#-a"/>
-  <hasMetadata rdf:resource="#--act"/>
-  <hasOutPort rdf:resource="#SEQUENCES_ALIGNMENT"/>
-  <implements rdf:resource="#alinhamento"/>
-  <hasRetrospectiveCall rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasRetrospectiveCall>
-</Program>
+  <wasAssociatedWith rdf:resource="#full_dataset_plasmodium"/>
+</Attribute>
 
-<Program rdf:about="#clustalw">
+<Port rdf:about="#full_dataset_plasmodium">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Sequence_alignment_operation_0292"/>
-  <belongsTo rdf:resource="#Experiment_1"/>
-  <hasInPort rdf:resource="#VALIDATED_SEQUENCE"/>
-  <hasMetadata rdf:resource="#sources/SciPhy/cgi-bin/arpa.py"/>
-  <hasMetadata rdf:resource="#-t"/>
-  <hasMetadata rdf:resource="#-o"/>
-  <hasMetadata rdf:resource="#-a"/>
+  <wasAssociatedWith rdf:resource="#ATT_INPUT_SEQUENCE"/>
+</Port>
+
+<Attribute rdf:about="#ATT_SEQUENCES_OUTPUT_FORMAT">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <wasAssociatedWith rdf:resource="#nexus"/>
+</Attribute>
+
+<Port rdf:about="#nexus">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <wasAssociatedWith rdf:resource="#ATT_SEQUENCES_OUTPUT_FORMAT"/>
+</Port>
+
+<Attribute rdf:about="#ATT_TREE_OUTPUT">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <wasAssociatedWith rdf:resource="#PORT_TREE"/>
+</Attribute>
+
+<Port rdf:about="#PORT_TREE">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <wasAssociatedWith rdf:resource="#ATT_TREE_OUTPUT"/>
+</Port>
+
+<Relation rdf:about="#REL_INPUT_TREE_GEN">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <composedBy rdf:resource="#ATT_INPUT_SEQUENCE"/>
+  <composedBy rdf:resource="#ATT_SEQUENCES_OUTPUT_FORMAT"/>
+  <consumedBy rdf:resource="#Act_tree_gen"/>
+</Relation>
+
+<Relation rdf:about="#REL_OUTPUT_TREE_GEN">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <composedBy rdf:resource="#ATT_TREE_OUTPUT"/>
+  <generatedBy rdf:resource="#Act_tree_gen"/>
+  <consumedBy rdf:resource="#Act_sub_tree"/>
+</Relation>
+
+<Program rdf:about="#ClustalW">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <rdf:type rdf:resource="#Phylogenetic_tree_generation_operation_0547"/>
+  <hasMetadata rdf:resource="#constructor2.py"/>
+  <belongsTo rdf:resource="#NMFSt"/>
+  <hasInPort rdf:resource="#nexus"/>
+  <hasInPort rdf:resource="#full_dataset_plasmodium"/>
+  <hasOutPort rdf:resource="#PORT_TREE"/>
+  <implements rdf:resource="#Act_tree_gen"/>
   <hasMetadata rdf:resource="#--act"/>
-  <hasOutPort rdf:resource="#SEQUENCES_ALIGNMENT"/>
-  <implements rdf:resource="#alinhamento"/>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</hasId>
   <hasRetrospectiveCall rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasRetrospectiveCall>
 </Program>
 
-<Relation rdf:about="#Rel_Validation_Out">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <composedBy rdf:resource="#Output_Validation_att"/>
-  <consumedBy rdf:resource="#alinhamento"/>
-  <generatedBy rdf:resource="#validation"/>
-</Relation>
-
-<Relation rdf:about="#Rel_Alignment_Out">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <composedBy rdf:resource="#alignment_att"/>
-  <consumedBy rdf:resource="#evolutive_model"/>
-  <consumedBy rdf:resource="#conversion"/>
-  <consumedBy rdf:resource="#eq_conversion"/>
-  <consumedBy rdf:resource="#treegenerator"/>
-  <generatedBy rdf:resource="#alinhamento"/>
-</Relation>
-
-<Port rdf:about="#VALIDATED_SEQUENCE">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <wasAssociatedWith rdf:resource="#Output_Validation_att"/>
-</Port>
-
-<Url rdf:about="#sources/SciPhy/cgi-bin/arpa.py">
+<Url rdf:about="#constructor2.py">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
 </Url>
 
-<Metadata rdf:about="#-t">
+<Abstract_activity rdf:about="#Act_tree_gen">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Configuration_Parameter"/>
-</Metadata>
-
-<Metadata rdf:about="#-o">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Configuration_Parameter"/>
-  <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">out</value>
-</Metadata>
-
-<Metadata rdf:about="#-a">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Configuration_Parameter"/>
-</Metadata>
+  <rdf:type rdf:resource="#Phylogenetic_tree_generation_operation_0547"/>
+  <hasInputRelation rdf:resource="#REL_INPUT_TREE_GEN"/>
+  <hasOutputRelation rdf:resource="#REL_OUTPUT_TREE_GEN"/>
+  <executedBy rdf:resource="#ClustalW"/>
+  <rdf:type rdf:resource="#Mandatory"/>
+  <rdf:type rdf:resource="#First"/>
+  <belongsTo rdf:resource="#NMFSt"/>
+</Abstract_activity>
 
 <Metadata rdf:about="#--act">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#Configuration_Parameter"/>
 </Metadata>
 
-<Port rdf:about="#SEQUENCES_ALIGNMENT">
+<Attribute rdf:about="#ATT_SUBTREES">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <wasAssociatedWith rdf:resource="#alignment_att"/>
+  <wasAssociatedWith rdf:resource="#PORT_SUBTREES"/>
+</Attribute>
+
+<Port rdf:about="#PORT_SUBTREES">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <wasAssociatedWith rdf:resource="#ATT_SUBTREES"/>
 </Port>
 
-<Attribute rdf:about="#Output_Validation_att">
+<Relation rdf:about="#REL_OUTPUT_SUBTREES">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <wasAssociatedWith rdf:resource="#VALIDATED_SEQUENCE"/>
-</Attribute>
-
-<Abstract_activity rdf:about="#validation">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#First"/>
-  <rdf:type rdf:resource="#Mandatory"/>
-  <rdf:type rdf:resource="#Sequencing_quality_control"/>
-  <belongsTo rdf:resource="#Experiment_1"/>
-  <executedBy rdf:resource="#remove_pipe"/>
-  <hasInputRelation rdf:resource="#Rel_Validation_In"/>
-  <hasOutputRelation rdf:resource="#Rel_Validation_Out"/>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</hasId>
-</Abstract_activity>
-
-<Attribute rdf:about="#alignment_att">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <wasAssociatedWith rdf:resource="#SEQUENCES_ALIGNMENT"/>
-</Attribute>
-
-<Abstract_activity rdf:about="#evolutive_model">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Mandatory"/>
-  <rdf:type rdf:resource="#Sequence_alignment_refinament_operation_2089"/>
-  <belongsTo rdf:resource="#Experiment_1"/>
-  <executedBy rdf:resource="#model_generator"/>
-  <hasInputRelation rdf:resource="#Rel_Alignment_Out"/>
-  <hasOutputRelation rdf:resource="#ds_omodelgeneratormodule_raxml"/>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</hasId>
-</Abstract_activity>
-
-<Abstract_activity rdf:about="#conversion">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Equivalence"/>
-  <rdf:type rdf:resource="#Optional"/>
-  <rdf:type rdf:resource="#Sequence_alignment_conversion_operation_0260"/>
-  <belongsTo rdf:resource="#Experiment_1"/>
-  <executedBy rdf:resource="#readseq"/>
-  <hasInputRelation rdf:resource="#Rel_Alignment_Out"/>
-  <hasOutputRelation rdf:resource="#Rel_Converted_Alignment_Out"/>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8</hasId>
-</Abstract_activity>
-
-<Abstract_activity rdf:about="#eq_conversion">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Optional"/>
-  <rdf:type rdf:resource="#Sequence_alignment_conversion_operation_0260"/>
-  <belongsTo rdf:resource="#Experiment_1"/>
-  <executedBy rdf:resource="#readseq"/>
-  <hasInputRelation rdf:resource="#Rel_Alignment_Out"/>
-  <hasOutputRelation rdf:resource="#Rel_Converted_Alignment_Out_eq"/>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</hasId>
-</Abstract_activity>
-
-<Abstract_activity rdf:about="#treegenerator">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Mandatory"/>
-  <rdf:type rdf:resource="#Phylogenetic_tree_generation_operation_0547"/>
-  <rdf:type rdf:resource="#Variant"/>
-  <belongsTo rdf:resource="#Experiment_1"/>
-  <executedBy rdf:resource="#raxml"/>
-  <executedBy rdf:resource="#mrbayes"/>
-  <hasInputRelation rdf:resource="#ds_omodelgeneratormodule_raxml"/>
-  <hasInputRelation rdf:resource="#Rel_Alignment_Out"/>
-  <hasOutputRelation rdf:resource="#Rel_Tree_Generator_Out"/>
-  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</hasId>
-</Abstract_activity>
-
-<Program rdf:about="#remove_pipe">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Sequencing_quality_control"/>
-  <belongsTo rdf:resource="#Experiment_1"/>
-  <hasInPort rdf:resource="#INPUT_SEQUENCE"/>
-  <hasMetadata rdf:resource="#sources/SciPhy/cgi-bin/arpa.py"/>
-  <hasMetadata rdf:resource="#-f"/>
-  <hasMetadata rdf:resource="#-t"/>
-  <hasMetadata rdf:resource="#-o"/>
-  <hasMetadata rdf:resource="#-a"/>
-  <hasMetadata rdf:resource="#--act"/>
-  <hasOutPort rdf:resource="#VALIDATED_SEQUENCE"/>
-  <implements rdf:resource="#validation"/>
-  <hasRetrospectiveCall rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasRetrospectiveCall>
-</Program>
-
-<Relation rdf:about="#Rel_Validation_In">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <composedBy rdf:resource="#Input_Validation_att"/>
-  <consumedBy rdf:resource="#validation"/>
+  <composedBy rdf:resource="#ATT_SUBTREES"/>
+  <generatedBy rdf:resource="#Act_sub_tree"/>
 </Relation>
 
-<Program rdf:about="#model_generator">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Sequence_alignment_refinament_operation_2089"/>
-  <belongsTo rdf:resource="#Experiment_1"/>
-  <hasInPort rdf:resource="#SEQUENCES_ALIGNMENT"/>
-  <hasMetadata rdf:resource="#sources/SciPhy/cgi-bin/arpa.py"/>
-  <hasMetadata rdf:resource="#-gamma"/>
-  <hasMetadata rdf:resource="#-t"/>
-  <hasMetadata rdf:resource="#-o"/>
-  <hasMetadata rdf:resource="#-p"/>
-  <hasMetadata rdf:resource="#--act"/>
-  <hasOutPort rdf:resource="#data_transformation_execution_id_2023_port"/>
-  <hasOutPort rdf:resource="#model"/>
-  <implements rdf:resource="#evolutive_model"/>
-  <hasRetrospectiveCall rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasRetrospectiveCall>
-</Program>
-
-<Relation rdf:about="#ds_omodelgeneratormodule_raxml">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <composedBy rdf:resource="#evolutiveModel_att"/>
-  <composedBy rdf:resource="#data_transformation_execution_id_2023_att"/>
-  <consumedBy rdf:resource="#treegenerator"/>
-  <generatedBy rdf:resource="#evolutive_model"/>
-</Relation>
-
-<Program rdf:about="#readseq">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Sequence_alignment_conversion_operation_0260"/>
-  <belongsTo rdf:resource="#Experiment_1"/>
-  <hasInPort rdf:resource="#VALIDATED_SEQUENCE"/>
-  <hasMetadata rdf:resource="#sources/SciPhy/cgi-bin/arpa.py"/>
-  <hasMetadata rdf:resource="#-t"/>
-  <hasMetadata rdf:resource="#-o"/>
-  <hasMetadata rdf:resource="#-p"/>
-  <hasMetadata rdf:resource="#--act"/>
-  <hasOutPort rdf:resource="#CONVERTED_ALIGNMENT"/>
-  <implements rdf:resource="#conversion"/>
-  <implements rdf:resource="#eq_conversion"/>
-  <hasRetrospectiveCall rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasRetrospectiveCall>
-</Program>
-
-<Relation rdf:about="#Rel_Converted_Alignment_Out">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <composedBy rdf:resource="#converted_alignment_att_eq"/>
-  <composedBy rdf:resource="#converted_alignment_att"/>
-  <generatedBy rdf:resource="#conversion"/>
-</Relation>
-
-<Relation rdf:about="#Rel_Converted_Alignment_Out_eq">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <generatedBy rdf:resource="#eq_conversion"/>
-</Relation>
-
-<Program rdf:about="#raxml">
+<Program rdf:about="#SubTree_Program">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <rdf:type rdf:resource="#Phylogenetic_tree_generation_operation_0547"/>
-  <belongsTo rdf:resource="#Experiment_1"/>
-  <hasInPort rdf:resource="#SEQUENCES_ALIGNMENT"/>
-  <hasInPort rdf:resource="#model"/>
-  <hasMetadata rdf:resource="#sources/SciPhy/cgi-bin/arpa.py"/>
-  <hasMetadata rdf:resource="#-p"/>
-  <hasMetadata rdf:resource="#-t"/>
-  <hasMetadata rdf:resource="#-o"/>
+  <hasMetadata rdf:resource="#sources/NMFSt/code/sub_find.py"/>
+  <belongsTo rdf:resource="#NMFSt"/>
+  <hasInPort rdf:resource="#PORT_TREE"/>
+  <hasOutPort rdf:resource="#PORT_SUBTREES"/>
+  <implements rdf:resource="#Act_sub_tree"/>
   <hasMetadata rdf:resource="#--act"/>
-  <hasOutPort rdf:resource="#fileTree"/>
-  <implements rdf:resource="#treegenerator"/>
-  <hasRetrospectiveCall rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</hasRetrospectiveCall>
-</Program>
-
-<Program rdf:about="#mrbayes">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Phylogenetic_tree_generation_operation_0547"/>
-  <belongsTo rdf:resource="#Experiment_1"/>
-  <hasInPort rdf:resource="#CONVERTED_ALIGNMENT"/>
-  <hasInPort rdf:resource="#model"/>
-  <hasMetadata rdf:resource="#sources/SciPhy/cgi-bin/arpa.py"/>
-  <hasMetadata rdf:resource="#-p"/>
-  <hasMetadata rdf:resource="#-t"/>
-  <hasMetadata rdf:resource="#-o"/>
-  <hasMetadata rdf:resource="#-nr"/>
-  <hasMetadata rdf:resource="#-nc"/>
-  <hasMetadata rdf:resource="#-brn"/>
-  <hasMetadata rdf:resource="#-prt"/>
-  <hasMetadata rdf:resource="#-ng"/>
-  <hasMetadata rdf:resource="#-rt"/>
-  <hasMetadata rdf:resource="#--act"/>
-  <hasOutPort rdf:resource="#fileTree"/>
-  <implements rdf:resource="#treegenerator"/>
+  <hasId rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</hasId>
   <hasRetrospectiveCall rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</hasRetrospectiveCall>
 </Program>
 
-<Relation rdf:about="#Rel_Tree_Generator_Out">
+<Url rdf:about="#sources/NMFSt/code/sub_find.py">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <composedBy rdf:resource="#phylogenomic_tree"/>
-  <generatedBy rdf:resource="#treegenerator"/>
-</Relation>
+</Url>
 
-<Port rdf:about="#INPUT_SEQUENCE">
+<Abstract_activity rdf:about="#Act_sub_tree">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</Port>
-
-<Metadata rdf:about="#-f">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Configuration_Parameter"/>
-</Metadata>
-
-<Attribute rdf:about="#Input_Validation_att">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-</Attribute>
-
-<Metadata rdf:about="#-gamma">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Configuration_Parameter"/>
-  <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAMMA_CATEGORIES</value>
-</Metadata>
-
-<Metadata rdf:about="#-p">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Configuration_Parameter"/>
-</Metadata>
-
-<Port rdf:about="#data_transformation_execution_id_2023_port">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <wasAssociatedWith rdf:resource="#data_transformation_execution_id_2023_att"/>
-</Port>
-
-<Port rdf:about="#model">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <wasAssociatedWith rdf:resource="#evolutiveModel_att"/>
-</Port>
-
-<Attribute rdf:about="#evolutiveModel_att">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <wasAssociatedWith rdf:resource="#model"/>
-</Attribute>
-
-<Attribute rdf:about="#data_transformation_execution_id_2023_att">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <wasAssociatedWith rdf:resource="#data_transformation_execution_id_2023_port"/>
-</Attribute>
-
-<Port rdf:about="#CONVERTED_ALIGNMENT">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <wasAssociatedWith rdf:resource="#converted_alignment_att"/>
-</Port>
-
-<Attribute rdf:about="#converted_alignment_att">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <wasAssociatedWith rdf:resource="#CONVERTED_ALIGNMENT"/>
-</Attribute>
-
-<Port rdf:about="#fileTree">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <wasAssociatedWith rdf:resource="#phylogenomic_tree"/>
-</Port>
-
-<Metadata rdf:about="#-nr">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Configuration_Parameter"/>
-  <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nruns</value>
-</Metadata>
-
-<Metadata rdf:about="#-nc">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Configuration_Parameter"/>
-  <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nchains</value>
-</Metadata>
-
-<Metadata rdf:about="#-brn">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Configuration_Parameter"/>
-  <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">burnin</value>
-</Metadata>
-
-<Metadata rdf:about="#-prt">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Configuration_Parameter"/>
-  <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">printfreq</value>
-</Metadata>
-
-<Metadata rdf:about="#-ng">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Configuration_Parameter"/>
-  <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ngen</value>
-</Metadata>
-
-<Metadata rdf:about="#-rt">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <rdf:type rdf:resource="#Configuration_Parameter"/>
-  <value rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rates_mrbayes</value>
-</Metadata>
-
-<Attribute rdf:about="#phylogenomic_tree">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <wasAssociatedWith rdf:resource="#fileTree"/>
-</Attribute>
+  <rdf:type rdf:resource="#Phylogenetic_tree_generation_operation_0547"/>
+  <hasInputRelation rdf:resource="#REL_OUTPUT_TREE_GEN"/>
+  <hasOutputRelation rdf:resource="#REL_OUTPUT_SUBTREES"/>
+  <executedBy rdf:resource="#SubTree_Program"/>
+  <rdf:type rdf:resource="#Mandatory"/>
+  <belongsTo rdf:resource="#NMFSt"/>
+</Abstract_activity>
 
 
 </rdf:RDF>

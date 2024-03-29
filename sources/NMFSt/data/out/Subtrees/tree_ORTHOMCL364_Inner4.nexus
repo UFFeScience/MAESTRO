@@ -1,0 +1,8 @@
+#NEXUS
+Begin Taxa;
+ Dimensions NTax=2;
+ TaxLabels 6lcl|XP_653586.1 7lcl|XP_657292.1;
+End;
+Begin Trees;
+ Tree tree1=(6lcl|XP_653586.1:0.01753,7lcl|XP_657292.1:0.02537)Inner4:0.11396;
+End;

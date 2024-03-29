@@ -1,2 +1,0 @@
-WARNING:apscheduler.executors.default:Run time of job "collect_and_dispatch (trigger: interval[0:00:20], next run at: 2019-07-08 14:08:41 -03)" was missed by 0:00:06.051862
-WARNING:apscheduler.executors.default:Run time of job "collect_and_dispatch (trigger: interval[0:00:20], next run at: 2019-07-08 14:59:41 -03)" was missed by 0:00:08.083915

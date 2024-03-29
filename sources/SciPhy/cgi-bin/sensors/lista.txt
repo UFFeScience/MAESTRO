@@ -1,8 +1,0 @@
-lista.txt_
-script.sh_
-telemetria.txt_
-sensors_without_kafka.py_
-telemetry_test.py_
-script.py_
-script-DI.sh_
-sensors.log_

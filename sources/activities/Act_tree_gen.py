@@ -1,3 +1,4 @@
+import argparse
 import owlready2
 from owlready2 import *
 import subprocess
@@ -17,17 +18,26 @@ from dfa_lib_python.dataset import DataSet
 from dfa_lib_python.element import Element
 from dfa_lib_python.program import Program
 
-os.system("python sources/Provenance/prospectiveProvenance.py")
+os.system("python3 Provenance/prospectiveProvenance.py")
+# parser = argparse.ArgumentParser(description='Descrição do script.')
+# parser.add_argument('full_dataset_plasmodium', type=str, help='Descrição do argumento 1')
+# parser.add_argument('nexus', type=str, help='Descrição do argumento 1')
+# parser.add_argument('ClustalW', type=str, help='Descrição do argumento 1')
+# args = parser.parse_args()
+# full_dataset_plasmodium = args.full_dataset_plasmodium
+# nexus = args.nexus
+# ClustalW = args.ClustalW
+#
+#
+# task = Task(1, "NMFSt","Act_tree_gen")
+# task_input = DataSet("iAct_tree_gen", [Element([full_dataset_plasmodium, nexus, ClustalW])])
+# task.add_dataset(task_input)
+# task.begin()
 
-task = Task(1, "NMFSt", "TaskClustalW")
-task_input = DataSet("iAct_tree_gen", [Element(['../data/full_dataset_plasmodium', 'nexus'])])
-task.add_dataset(task_input)
-task.begin()
+os.system("cd NMFSt/code && python3 constructor2.py full_dataset_plasmodium nexus ClustalW ")
 
-os.system("python2 ontoexpline.sources/NMFSt/code/Constructor.py --inport= ../data/full_dataset_plasmodium --inport= nexus --program ClustalW ")
-
-task_output = DataSet("oAct_tree_gen", [Element(['PORT_TREE'])])
-task.add_dataset(task_output)
-task.save()
-task.end()
+# task_output = DataSet("oAct_tree_gen", [Element(['PORT_TREE'])])
+# task.add_dataset(task_output)
+# task.save()
+# task.end()
 

@@ -1,3 +1,4 @@
+import argparse
 import owlready2
 from owlready2 import *
 import subprocess
@@ -17,13 +18,20 @@ from dfa_lib_python.dataset import DataSet
 from dfa_lib_python.element import Element
 from dfa_lib_python.program import Program
 
+parser = argparse.ArgumentParser(description='Descrição do script.')
+parser.add_argument('PORT_TREE', type=str, help='Descrição do argumento 1')
+parser.add_argument('SubTree_Program', type=str, help='Descrição do argumento 1')
+args = parser.parse_args()
+PORT_TREE = args.PORT_TREE
+SubTree_Program = args.SubTree_Program
 
-task = Task(2, "NMFSt", "TaskSubTree_Program")
-task_input = DataSet("iAct_sub_tree", [Element(['PORT_TREE'])])
+
+task = Task(2, "NMFSt","Act_sub_tree")
+task_input = DataSet("iAct_sub_tree", [Element([PORT_TREE, SubTree_Program])])
 task.add_dataset(task_input)
 task.begin()
 
-os.system("python2 ontoexpline.sources/NMFSt/code/sub_find.py --inport= PORT_TREE --program SubTree_Program ")
+os.system("cd NMFSt/code && python3 sources/NMFSt/code/sub_find.py PORT_TREE SubTree_Program ")
 
 task_output = DataSet("oAct_sub_tree", [Element(['PORT_SUBTREES'])])
 task.add_dataset(task_output)

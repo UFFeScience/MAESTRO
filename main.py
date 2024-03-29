@@ -6,7 +6,6 @@ import os
 import statistics
 
 import owlready2
-import xds as xds
 from owlready2 import *
 import subprocess
 import time
@@ -30,10 +29,12 @@ from functions.ConcreteDerivation import *
 from functions.AbstractWf import *
 from functions.ProvenanceCalls import *
 from functions.Experiment import *
-from maestro_analysis import find_data_tranformation_telemetry_metrics, find_program_telemetry_metrics, search_data, \
-    search_by_domain_operation
+# from maestro_analysis import find_data_tranformation_telemetry_metrics, find_program_telemetry_metrics, search_data, \
+#     search_by_domain_operation
 from sources.TemplateExecution import createTemplate
-from dfa_lib_python.dataflow import Dataflow
+# from dfa_lib_python-OLD.dataflow import Dataflow
+import glob
+
 
 global dataflow
 def cleanOntology(ontoexpline):
@@ -50,18 +51,23 @@ def cleanOntology(ontoexpline):
         destroy_entity(individual)
         print(individual)
     ontoexpline.save(file="ontologies/ontoexpline.owl", format="rdfxml")
-
+def cleanActivityDirectory():
+    files = glob.glob('sources/activities/*')
+    for f in files:
+        os.remove(f)
 
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
 
-    df = Dataflow('asd')
+    df = Dataflow('NMFST')
     ontoexpline = get_ontology("ontologies/ontoexpline.owl").load()
-    # cleanOntology(ontoexpline)
+    cleanOntology(ontoexpline)
+    # cleanActivityDirectory()
 
-    dataflow = createExperiment(ontoexpline, "Experiment_1")
+    dataflow = createExperiment(ontoexpline, "NMFSt")
 
+    ###########################################################################################
     # Definindo as operações de domínio EDAM
     op_validation = domainOperation(ontoexpline, "Sequencing_quality_control")
     op_alignment = domainOperation(ontoexpline, "Sequence_alignment_operation_0292")
@@ -69,223 +75,139 @@ if __name__ == '__main__':
     op_model = domainOperation(ontoexpline, "Sequence_alignment_refinament_operation_2089")
     op_tree = domainOperation(ontoexpline, "Phylogenetic_tree_generation_operation_0547")
 
+    ###########################################################################################
+    #Definindo dependências de atividade
     # Atributo e porta de entrada
-    sequences_input = createAttribute(ontoexpline, "Input_Validation_att")  # atributo sequencia de entrada
-    sequences_port = createPort(ontoexpline, "INPUT_SEQUENCE")  # arquivo consumido pelo programa
+    att_sequences_input_path = createAttribute(ontoexpline, "ATT_INPUT_SEQUENCE")  # atributo sequencia de entrada
+    port_path_sequences = createPort(ontoexpline, "full_dataset_plasmodium")  # arquivo consumido pelo programa
+    associatePortAtt(port_path_sequences, att_sequences_input_path)  # associando att na porta
 
-    # atributo e porta de saída
-    sequences_validated = createAttribute(ontoexpline, "Output_Validation_att")
-    sequences_validated_port = createPort(ontoexpline, "VALIDATED_SEQUENCE")  # saída do programa
+    att_sequences_output_format = createAttribute(ontoexpline, "ATT_SEQUENCES_OUTPUT_FORMAT")  # atributo sequencia de entrada
+    port_sequences_output_format = createPort(ontoexpline, "nexus")  # arquivo consumido pelo programa
+    associatePortAtt(port_sequences_output_format, att_sequences_output_format)  # associando att na porta
 
-    # relações de I/O
-    rel_input_validation = createRelation(ontoexpline, "Rel_Validation_In")  # relação de entrada
-    rel_output_validation = createRelation(ontoexpline, "Rel_Validation_Out")
 
-    # associações de itens abstratos e concretos
-    # associatePortAtt(sequences_port, sequences_input)  # associando att na porta
-    associatePortAtt(sequences_validated_port, sequences_validated)  # associando att na porta
-
-    associateRelationAtt(rel_input_validation, [sequences_input])
-    associateRelationAtt(rel_output_validation, [sequences_validated])
-
-    # criando programa
-    remove_pipe = createProgram(ontoexpline, "remove_pipe", op_validation, "sources/SciPhy/cgi-bin/arpa.py", dataflow)
-    associateProgramPort(remove_pipe, [sequences_port], [sequences_validated_port])
-    in_file = createMetadata(ontoexpline, ontoexpline.Configuration_Parameter, "-f")
-    data_type = createMetadata(ontoexpline, ontoexpline.Configuration_Parameter, "-t")
-    output_dir = createMetadata(ontoexpline, ontoexpline.Configuration_Parameter, "-o")
-    a = createMetadata(ontoexpline, ontoexpline.Configuration_Parameter, "-a")
-
-    output_dir.value=["out"]
-    addMetadata(ontoexpline, remove_pipe, in_file)
-    addMetadata(ontoexpline, remove_pipe, data_type)
-    addMetadata(ontoexpline, remove_pipe, output_dir)
-    addMetadata(ontoexpline, remove_pipe, a)
-    remove_pipe.hasRetrospectiveCall.append(False)
-
-    # criando atividade
-    aa = createActivity(ontoexpline, "validation", op_validation, [rel_input_validation],
-                        [rel_output_validation], False, [remove_pipe], True, dataflow)
-    ###################################################################################################################
-
-    # Atributo e porta de saida do alinhamento
-    alignment = createAttribute(ontoexpline, "alignment_att")  # atributo sequencia de entrada
-    sequences_aligned_port = createPort(ontoexpline, "SEQUENCES_ALIGNMENT")  # arquivo consumido pelo programa
+    # Atributo e porta de saída
+    att_tree_output = createAttribute(ontoexpline, "ATT_TREE_OUTPUT")  # atributo sequencia de entrada
+    port_tree = createPort(ontoexpline, "PORT_TREE")  # arquivo consumido pelo programa
+    associatePortAtt(port_tree, att_tree_output)  # associando atributo a porta
 
     # relações de I/O
-    rel_output_alignment = createRelation(ontoexpline, "Rel_Alignment_Out")
+    rel_input_tree_gen = createRelation(ontoexpline, "REL_INPUT_TREE_GEN")  # relação de entrada
+    rel_output_tree_gen = createRelation(ontoexpline, "REL_OUTPUT_TREE_GEN")
 
     # associações de itens abstratos e concretos
-    associatePortAtt(sequences_aligned_port, alignment)  # associando att na porta
+    associateRelationAtt(rel_input_tree_gen, [att_sequences_input_path, att_sequences_output_format])
+    associateRelationAtt(rel_output_tree_gen, [att_tree_output])
 
-    associateRelationAtt(rel_output_alignment, [alignment])
-
-    # criando programa
-    mafft = createProgram(ontoexpline, "mafft", op_alignment, "sources/SciPhy/cgi-bin/arpa.py", dataflow)
-    associateProgramPort(mafft, [sequences_validated_port], [sequences_aligned_port])
-    mafft.hasRetrospectiveCall = [False]
-    addMetadata(ontoexpline, mafft, data_type)
-    addMetadata(ontoexpline, mafft, output_dir)
-    addMetadata(ontoexpline, mafft, a)
-
-    clustalw = createProgram(ontoexpline, "clustalw", op_alignment, "sources/SciPhy/cgi-bin/arpa.py", dataflow)
-    associateProgramPort(clustalw, [sequences_validated_port], [sequences_aligned_port])
+    # definindo implementador para a atividade a ser criada
+    clustalw = createProgram(ontoexpline, "ClustalW", op_tree, "constructor2.py", dataflow)
+    associateProgramPort(clustalw, [port_path_sequences, port_sequences_output_format], [port_tree])
     clustalw.hasRetrospectiveCall = [False]
-    addMetadata(ontoexpline, clustalw, data_type)
-    addMetadata(ontoexpline, clustalw, output_dir)
-    addMetadata(ontoexpline, clustalw, a)
+
+    ###########################################################################################
+    #instanciando a atividade 1
+    act_tree_generation = createActivity(ontoexpline, "Act_tree_gen", op_tree, [rel_input_tree_gen],
+
+                         [rel_output_tree_gen], False, [clustalw], True, dataflow)
+
+    ###########################################################################################
+
+    att_subtrees = createAttribute(ontoexpline, "ATT_SUBTREES")  # atributo sequencia de entrada
+    port_subtrees = createPort(ontoexpline, "PORT_SUBTREES")  # arquivo gerado pelo programa
+    associatePortAtt(port_subtrees, att_subtrees)  # associando att na porta
+
+    rel_output_subtrees = createRelation(ontoexpline, "REL_OUTPUT_SUBTREES")
+    associateRelationAtt(rel_output_subtrees, [att_subtrees])
+
+    subtree_program = createProgram(ontoexpline, "SubTree_Program", op_tree, "sources/NMFSt/code/sub_find.py", dataflow)
+    associateProgramPort(subtree_program, [port_tree], [port_subtrees])
+    subtree_program.hasRetrospectiveCall = [False]
+
+    ###########################################################################################
+    # instanciando a atividade 2
+    act_sub_trees_generation = createActivity(ontoexpline, "Act_sub_tree", op_tree, [rel_output_tree_gen],
+
+                                         [rel_output_subtrees], False, [subtree_program], False, dataflow)
+
+    ###########################################################################################
 
 
+# searchByDomainOperation(ontoexpline, op_tree, parameters={"attribute":"ATT_TREE_OUTPUT", "port_value": "tree_ORTHOMCL371" })
+# searchByDomainOperation_out(ontoexpline, op_tree, parameters={"attribute":"ATT_FILE", "port_value": "ORTHOMCL256" })
+#
+# "../data/out/Trees/tree_ORTHOMCL256.nexus"
+# {
+#     "Dataflows” :
+#     {
+#         "Operation": "Tree_Generation",
+#         "Dataflow_id": 1,
+#         "Attribute:": "Tree_output",
+#         "Value": "tree_ORTHOMCL371",
+#         "Tasks_exec_id": 8,
+#     }
+# }
 
-    associateProgramPort(remove_pipe, [sequences_port], [sequences_validated_port])
-
-    # criando atividade
-    aa2 = createActivity(ontoexpline, "alinhamento", op_alignment, [rel_output_validation],
-                         [rel_output_alignment], False, [mafft, clustalw], False, dataflow)
-
-    ###################################################################################################################
-    # Atributo e porta de saida do alinhamento
-    evolutiveModel_att = createAttribute(ontoexpline, "evolutiveModel_att")  # atributo sequencia de entrada
-    data_transformation_execution_att = createAttribute(ontoexpline, "data_transformation_execution_id_2023_att")  # atributo sequencia de entrada
-    evolutiveModel_port = createPort(ontoexpline, "model")  # arquivo consumido pelo programa
-    data_transformation_execution_port = createPort(ontoexpline, "data_transformation_execution_id_2023_port")
-    # relações de I/O
-    rel_output_evolutiveModel = createRelation(ontoexpline, "ds_omodelgeneratormodule_raxml")
-
-    # associações de itens abstratos e concretos
-    associatePortAtt(evolutiveModel_att, evolutiveModel_port)  # associando att na porta
-    associatePortAtt(data_transformation_execution_att, data_transformation_execution_port)  # associando att na porta
-
-
-    associateRelationAtt(rel_output_evolutiveModel, [evolutiveModel_att, data_transformation_execution_att])
-
-    # criando programa
-    model_generator = createProgram(ontoexpline, "model_generator", op_model, "sources/SciPhy/cgi-bin/arpa.py", dataflow)
-    associateProgramPort(model_generator, [sequences_aligned_port], [evolutiveModel_port, data_transformation_execution_port])
-    gamma_categories = createMetadata(ontoexpline, ontoexpline.Configuration_Parameter, "-gamma")
-    gamma_categories.value = ["GAMMA_CATEGORIES"]
-    prog = createMetadata(ontoexpline, ontoexpline.Configuration_Parameter, "-p")
-
-    addMetadata(ontoexpline, model_generator, gamma_categories)
-    addMetadata(ontoexpline, model_generator, data_type)
-    addMetadata(ontoexpline, model_generator, output_dir)
-    addMetadata(ontoexpline, model_generator, prog)
-    model_generator.hasRetrospectiveCall = [False]
-
-    # criando atividade
-    aa3 = createActivity(ontoexpline, "evolutive_model", op_model, [rel_output_alignment],
-                         [rel_output_evolutiveModel], False, [model_generator], False, dataflow)
-    ###################################################################################################################
-
-    # Atributo e porta de saida do alinhamento
-    converted_alignment_att = createAttribute(ontoexpline, "converted_alignment_att")  # atributo sequencia de entrada
-    converted_alignment_port = createPort(ontoexpline, "CONVERTED_ALIGNMENT")  # arquivo consumido pelo programa
-
-    # atributo para a relação de equivalencia
-    converted_alignment_att_eq = createAttribute(ontoexpline, "converted_alignment_att_eq")  # atributo sequencia de entrada
-
-    # relações de I/O
-    rel_output_converted_alignment = createRelation(ontoexpline, "Rel_Converted_Alignment_Out")
-    rel_output_converted_alignment_eq = createRelation(ontoexpline, "Rel_Converted_Alignment_Out_eq")
-
-    # associações de itens abstratos e concretos
-    associatePortAtt(converted_alignment_att, converted_alignment_port)  # associando att na porta
-
-    associateRelationAtt(rel_output_converted_alignment, [converted_alignment_att, converted_alignment_att_eq])
-
-    # criando programa
-    read_seq = createProgram(ontoexpline, "readseq", op_conversion, "sources/SciPhy/cgi-bin/arpa.py", dataflow)
-    read_seq.hasRetrospectiveCall = [False]
-    addMetadata(ontoexpline, read_seq, data_type)
-    addMetadata(ontoexpline, read_seq, output_dir)
-    addMetadata(ontoexpline, read_seq, prog)
-
-    associateProgramPort(read_seq, [sequences_validated_port], [converted_alignment_port])
-
-    # criando atividade
-    aa4 = createActivity(ontoexpline, "conversion", op_conversion, [rel_output_alignment],
-                         [rel_output_converted_alignment], True, [read_seq], False, dataflow)
-
-    #criando equivalencia para teste
-    aa_equivalence = createActivity(ontoexpline, "eq_conversion", op_conversion, [rel_output_alignment],
-                         [rel_output_converted_alignment_eq], True, [read_seq], False, dataflow)
-    ###################################################################################################################
-
-    # Atributo e porta de saida do alinhamento
-    tree_att = createAttribute(ontoexpline, "phylogenomic_tree")  # atributo sequencia de entrada
-    tree_port = createPort(ontoexpline, "fileTree")  # arquivo consumido pelo programa
-
-    # relações de I/O
-    rel_output_tree_generator = createRelation(ontoexpline, "Rel_Tree_Generator_Out")
-
-    # associações de itens abstratos e concretos
-    associatePortAtt(tree_att, tree_port)  # associando att na porta
-
-    associateRelationAtt(rel_output_tree_generator, [tree_att])
-
-    # criando programa
-    raxml = createProgram(ontoexpline, "raxml", op_tree, "sources/SciPhy/cgi-bin/arpa.py", dataflow)
-    raxml.hasRetrospectiveCall = [False]
-    addMetadata(ontoexpline, raxml, prog)
-    addMetadata(ontoexpline, raxml, data_type)
-    addMetadata(ontoexpline, raxml, output_dir)
-
-    mrbayes = createProgram(ontoexpline, "mrbayes", op_tree, "sources/SciPhy/cgi-bin/arpa.py", dataflow)
-    mrbayes.hasRetrospectiveCall = [False]
-    nruns = createMetadata(ontoexpline, ontoexpline.Configuration_Parameter, "-nr")
-    nruns.value=["nruns"]
-    nchains = createMetadata(ontoexpline, ontoexpline.Configuration_Parameter, "-nc")
-    nchains.value=["nchains"]
-    burnin = createMetadata(ontoexpline, ontoexpline.Configuration_Parameter, "-brn")
-    burnin.value=["burnin"]
-    printfreq = createMetadata(ontoexpline, ontoexpline.Configuration_Parameter, "-prt")
-    printfreq.value=["printfreq"]
-    ngen = createMetadata(ontoexpline, ontoexpline.Configuration_Parameter, "-ng")
-    ngen.value=["ngen"]
-    rates_mrbayes = createMetadata(ontoexpline, ontoexpline.Configuration_Parameter, "-rt")
-    rates_mrbayes.value=["rates_mrbayes"]
-
-    addMetadata(ontoexpline, mrbayes, prog)
-    addMetadata(ontoexpline, mrbayes, data_type)
-    addMetadata(ontoexpline, mrbayes, output_dir)
-    addMetadata(ontoexpline, mrbayes, nruns)
-    addMetadata(ontoexpline, mrbayes, nchains)
-    addMetadata(ontoexpline, mrbayes, burnin)
-    addMetadata(ontoexpline, mrbayes, printfreq)
-    addMetadata(ontoexpline, mrbayes, ngen)
-    addMetadata(ontoexpline, mrbayes, rates_mrbayes)
-
-    associateProgramPort(raxml, [sequences_aligned_port, evolutiveModel_port], [tree_port])
-    associateProgramPort(mrbayes, [converted_alignment_port, evolutiveModel_port], [tree_port])
+{
+    "Dataflows” :
+   {
+       "Operation": "Tree_Generation",
+       "Dataflow_id": 1,
+       "Attribute:": "Att_file",
+       "Value": "nexus",
+       "Tasks_exec_id": [1, 2, 3, 4,5,6]
+   }
+}
 
 
-    # criando atividade
-    aa5 = createActivity(ontoexpline, "treegenerator", op_tree, [rel_output_alignment, rel_output_evolutiveModel],
-                         [rel_output_tree_generator], False, [raxml, mrbayes], False, dataflow)
-    ###################################################################################################################
 
 ontoexpline.save(file="ontologies/ontoexpline.owl", format="rdfxml")
-showExpLine() #está ok
+
+absWfUser= [act_tree_generation, act_sub_trees_generation]
+x = isValid(ontoexpline, absWfUser)
+abs_wf = absWfDependences(ontoexpline, absWfUser)
+absWfToConcreteWf(ontoexpline, absWfUser, [[], []])
+createProvenanceCalls(ontoexpline, abs_wf, dataflow,[[], []])
+
+
+# showExpLine() #está ok
 # abstractDerivationByOptionality(ontoexpline) #está ok, ainda não plota o gráfico
 
 # createTemplate(ontoexpline, remove_pipe) #está ok, insere chamadas retrospectiva nos scripts - inserir essas chamadas na função de derivação
 # createTemplate(ontoexpline, mafft)
 # createTemplate(ontoexpline, mrbayes)
 
-inicio = time.time()
-absWf = [aa, aa2, aa3, aa4, aa5]
-x = isValid(ontoexpline, absWf)
 
-abs_wf = absWfDependences(ontoexpline, absWf)
-# print("DEPENDENCES: ", abs_wf)
-print("|*** Executing: ",os.path.basename(__file__),"\n")
+# inicio = time.time()
+# absWfUser= [aa, aa2, aa3, aa4, aa5]
+# x = isValid(ontoexpline, absWfUser)
+#
+# print("|----------------------------------------------------|")
+# abs_wf = absWfDependences(ontoexpline, absWfUser)
+# # print("DEPENDENCES: ", abs_wf)
+# # print("|*** Executed file: ",os.path.basename(__file__),"\n")
+# print("|----------------------------------------------------|")
+# absWfToConcreteWf(ontoexpline, absWfUser, [[aa2, mafft], [aa5, mrbayes]])
+# print("|----------------------------------------------------|")
+# createProvenanceCalls(ontoexpline, abs_wf, dataflow, [[aa2, mafft], [aa5, mrbayes]])
+# print("|----------------------------------------------------|")
+
+
+
+
+
+
+
+
+
 # #Função para retornar elementos que estão na ontologia
 # # print("\nWF abstrato [[atividade, [dependências]]]: ",abs_wf)
 # print("** ",abs_wf)
 
-createProvenanceCalls(ontoexpline, abs_wf, dataflow, [[aa2, clustalw], [aa5, mrbayes]])
-fim = time.time()
-print("===> Tempo para derivar e criar chamadas de proveniencia:", fim-inicio)
+# createProvenanceCalls(ontoexpline, abs_wf, dataflow, [[aa2, mafft], [aa5, mrbayes]])
+# fim = time.time()
+# print("===> Tempo para derivar e criar chamadas de proveniencia:", fim-inicio)
+
 # isValid(ontoexpline, [aa, aa2, aa3, aa4, aa5])
 # getAbsWf(ontoexpline, [aa, aa2, aa3, aa4, aa5])
 # getVariabilities(ontoexpline, [aa, aa2, aa3, aa4, aa5])
@@ -328,25 +250,25 @@ print("===> Tempo para derivar e criar chamadas de proveniencia:", fim-inicio)
 # cleanOntology(ontoexpline)
 # ontoexpline.save(file="ontologies/ontoexpline.owl", format="rdfxml")
 # Abstract_activity and (hasInputRelation some (Relation and composedBy value alignment_att)) and (hasOutputRelation some (Relation and composedBy value atribuxo_x or composedBy value evolutiveModel_att))
-inicio = time.time()
-owlready2.JAVA_EXE = "/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java"
-ontoexpline = get_ontology("ontologies/ontoexpline.owl").load()
-with ontoexpline:
-    class Equivalence(ontoexpline.Entity):
-        equivalent_to = [ontoexpline.Abstract_activity and (ontoexpline.hasInputRelation.some(ontoexpline.Relation and ontoexpline.composedBy.value(ontoexpline.alignment_att))) and (ontoexpline.hasOutputRelation.some(ontoexpline.Relation and ontoexpline.composedBy.value(converted_alignment_att_eq)))]
-
-    ontoexpline.save(file="ontologies/ontoexpline.owl", format="rdfxml")
-    # close_world(Thing)
-
-    # sync_reasoner(infer_property_values = True)
-
-
-# eq = ontoexpline.Abstract_activity()
-eq = ontoexpline.search(type = ontoexpline.Equivalence)
-print(eq)
-fim = time.time()
-print("===> Tempo para calculo da equivalencia:", fim-inicio)
-print(aa4, aa4.is_a)
+# inicio = time.time()
+# owlready2.JAVA_EXE = "/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java"
+# ontoexpline = get_ontology("ontologies/ontoexpline.owl").load()
+# with ontoexpline:
+#     class Equivalence(ontoexpline.Entity):
+#         equivalent_to = [ontoexpline.Abstract_activity and (ontoexpline.hasInputRelation.some(ontoexpline.Relation and ontoexpline.composedBy.value(ontoexpline.alignment_att))) and (ontoexpline.hasOutputRelation.some(ontoexpline.Relation and ontoexpline.composedBy.value(converted_alignment_att_eq)))]
+#
+#     ontoexpline.save(file="ontologies/ontoexpline.owl", format="rdfxml")
+#     # close_world(Thing)
+#
+#     # sync_reasoner(infer_property_values = True)
+#
+#
+# # eq = ontoexpline.Abstract_activity()
+# eq = ontoexpline.search(type = ontoexpline.Equivalence)
+# # print(eq)
+# fim = time.time()
+# print("===> Tempo para calculo da equivalencia:", fim-inicio)
+# print(aa4, aa4.is_a)
 
 # find_data_tranformation_telemetry_metrics(26)
 # find_program_telemetry_metrics(read_seq, ontoexpline)
@@ -386,7 +308,7 @@ print(aa4, aa4.is_a)
 #
 #     # sync_reasoner(infer_property_values = True)
 
-search_by_domain_operation(ontoexpline, op_model, parameters={'attribute': evolutiveModel_att, 'port_value': 'JTT'})
+# search_by_domain_operation(ontoexpline, op_model, parameters={'attribute': evolutiveModel_att, 'port_value': 'JTT'})
 #quais entradas geram um atributo não relacionado a ela: Quais arquivos validados geram o modelo evolutivo RtREV?
 # indirect_search(ontoexpline, op_validation, attributes={"model": "RtREV"})
 

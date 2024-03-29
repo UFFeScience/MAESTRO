@@ -1,6 +1,6 @@
 import json
 import os
-
+from pathlib import Path
 
 def verifyCompatibility(a, activities):
     dependency = []
@@ -58,10 +58,12 @@ def isValid(ontoexpline, activities):
             for dep in relation.generatedBy:
                 if dep in activities:
                     verify = True
-                    # print("|*** ABS Wf is: ", verify, ". Starting concrete instantiation...")
+                    print("|*** ABS Wf is: ", verify, ". Starting concrete instantiation....")
+                    print(aa.name)
                 else:
                     verify = False
                     print("|*** ABS Wf is: ", verify,". Exiting MAESTRO...")
+                    print(dep, activities)
                     exit(0)
                     # return verify
     return verify

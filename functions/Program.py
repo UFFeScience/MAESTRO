@@ -11,8 +11,8 @@ def createProgram(onto, name, operation, source, dataflow):
 
     metadata_url = onto.Url(source)
     program.hasMetadata.append(metadata_url)
-    # programId = incrementProgramId()
-    # program.hasId = programId
+    programId = incrementProgramId()
+    program.hasId = programId
     program.belongsTo = dataflow
 
     return program

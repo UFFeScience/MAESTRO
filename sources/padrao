@@ -1,0 +1,30 @@
+wf.py:
+
+os.system("python3 activities/Act_tree_gen.py {} {} {}".format("testset", "nexus", "mafft"))
+
+act_tree_gen.py:
+
+parser = argparse.ArgumentParser(description='Descrição do script.')
+parser.add_argument('arg1', type=str, help='Descrição do argumento 1')
+parser.add_argument('arg2', type=str, help='Descrição do argumento 2')
+parser.add_argument('arg3', type=str, help='Descrição do argumento 2')
+
+args = parser.parse_args()
+
+# arg1 e arg 2 sao passados no wf.py e são o dataset e o formato respectivamente
+port1 = args.arg1
+port2 = args.arg2 # newick ou nexus
+port3 = args.arg3 # newick ou nexus
+
+task = Task(1, "NMFSt", "Act_tree_gen")
+task_input = DataSet("iAct_tree_gen", [Element([port1, port2, port3])])
+task.add_dataset(task_input)
+task.begin()
+
+os.system("cd NMFSt/code python3 constructor.py {} {} {}".format(port1, port2, port3))
+
+task_output = DataSet("oAct_tree_gen", [Element(['PORT_TREE'])])
+task.add_dataset(task_output)
+# task.save()
+task.end()
+

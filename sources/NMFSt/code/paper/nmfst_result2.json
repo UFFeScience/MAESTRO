@@ -1,0 +1,10 @@
+{
+   "Dataflows" :{
+       "Operation": "Tree_Generation",
+       "Dataflow_id": 1,
+       "Attribute:": "Att_file",
+       "Value": "../data/out/Trees/tree_ORTHOMCL256.nexus",
+       "Tasks_exec_id": [6],
+   }
+}
+
