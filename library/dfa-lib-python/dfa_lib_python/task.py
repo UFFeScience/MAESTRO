@@ -114,6 +114,6 @@ class Task(ProvenanceObject):
         r = requests.post(url, json=message)
         self._sets = []
         print(r.status_code)
-        print("funciona logo")
-        print("task salva")
+        # print("funciona logo")
+        # print("task salva")
         self._sets = []
